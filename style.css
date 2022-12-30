@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 html {
@@ -10,51 +11,123 @@ html {
 
 body {
     scroll-behavior: smooth;
+    font-family: 'Noto Serif Georgian', serif;
+    font-family: 'Red Hat Text', sans-serif;
 }
 
-.portrait-btn {
-    display: inline-block;
+/* HEADER  */
+
+.header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #222426;
+    border-bottom: #222426;
 }
 
-.dark-mode {
-    display: inline-block;
-    margin-top: 1rem;
-    appearance: none;
-    border: none;
-    background: none;
-}
-
-.portrait {
-    width: 41rem;
-    height: 85rem;
-    color: white;
-    overflow-x: hidden;
-}
-
-.portrait-container {
+.header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    padding: 1.2rem 1.6rem;
+}
+
+.header-brand {
+    font-size: 2rem;
+    color: white;
+}
+
+/* HOME SECTION */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-titles {
+    position: absolute;
+    display: flex;
     flex-direction: column;
-    margin-top: 30rem;
+    align-items: center;
+    top: 41%;
+    left: 23%;
+}
+
+.home-title__position {
+    font-size: 2rem;
+    color: white;
+}
+
+.home-btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 80%;
+    left: 22%;
 }
 
 h1 {
     font-size: 3.2rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
-.portrait-roll {
+.position {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.roll {
     font-size: 2rem;
 }
 
-.portrait-buttons {
+.action-btns {
     display: flex;
-    justify-content: center;
-    margin-top: 25rem;
+    justify-content: space-between;
+}
+
+.btn-download {
+    margin-right: 2rem;
+    padding: 1.5rem;
+    border-radius: 11px;
+    border: none;
+    color: white;
+    background-color: #2B3333;
+    cursor: pointer;
+    box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+}
+
+.btn-contact-me {
+    padding: 1.5rem;
+    border-radius: 11px;
+    border: none;
+    color: white;
+    background-color: #2B3333;
+    cursor: pointer;
+    box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+}
+
+
+/* ABOUT ME */
+
+.about-me {
+    padding: 2.9rem 1.6rem 1.6rem;
 }

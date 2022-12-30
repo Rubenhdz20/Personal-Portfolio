@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, SCSS, Typescript, Angular">
-    <title>Ruben Dev</title>
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+    <meta name="description" content="Personal Web, you can see all my projects and all my knowledge">
+    <meta name="robots" content="index,follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@500&family=Red+Hat+Text:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="../css/index/tablet.css" media="screen and (min-width:768px)"/>
+    <link rel="stylesheet" href="../css/index/desktop.css" media="screen and (min-width:1024px)"/> -->
+    <title>Ruben Dev!</title>
 </head>
 <body>
-    <section id="front-page" class="portrait">
-        <div class="portrait-btn">
-            <button class="dark-mode">
-                <img src="/change-theme.png" alt="change-dark-mode">
-            </button>
-        </div>
-        <div class="portrait-container">
+    <header class="header">
+        <section class="header-container">
+            <p class="header-brand">RUBDEV</p>
+        </section>
+    </header>
+
+    <section id="front-page" class="home">
+        <div class="home-titles">
             <h1>Welcome!</h1>
             <h2>My name is Ruben</h2>
-            <p class="portrait-roll">Frontend Developer💻</p>
+            <p class="home-title__position">Frontend Developer💻</p> 
         </div>
-        <div class="portrait-buttons">
-            <button class="download">Download CV</button>
-            <button class="contact-me">Contact Me</button>
+       
+        <div class="home-btns">
+            <button class="btn-download">Download CV</button>
+            <button class="btn-contact-me">Contact Me</button>
         </div>
     </section>
-    <section class="about-me"></section>
+
+    <section class="about-me">
+        <img src="" alt="">
+    </section>
+
     <section class="projects"></section>
+
+
     <script src="/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
@@ -42,6 +57,6 @@
         scaleMobile: 1.00,
         color: 0x2051cc
     })
-</script>
+    </script>
 </body>
 </html>
