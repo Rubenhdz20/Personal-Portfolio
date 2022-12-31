@@ -13,9 +13,29 @@
     <link rel="stylesheet" href="/style.css">
     <!-- <link rel="stylesheet" href="../css/index/tablet.css" media="screen and (min-width:768px)"/>
     <link rel="stylesheet" href="../css/index/desktop.css" media="screen and (min-width:1024px)"/> -->
-    <title>Ruben Dev!</title>
+    <title>I am glad you are here!</title>
 </head>
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation-button">
+            <span class="navigation-icon"></span>
+        </label>
+
+        <div class="navigation-background">&nbsp;</div>
+        
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="#" class="navigation-link">Home</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">About Me</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Projects</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <section class="header-container">
             <p class="header-brand">RUBDEV</p>
@@ -26,7 +46,7 @@
         <div class="home-titles">
             <h1>Welcome!</h1>
             <h2>My name is Ruben</h2>
-            <p class="home-title__position">Frontend Developer💻</p> 
+            <p class="home-title__position">Frontend Developer 💻</p> 
         </div>
        
         <div class="home-btns">
@@ -36,11 +56,12 @@
     </section>
 
     <section class="about-me">
-        <img src="" alt="">
+        <img class="avatar" src="/img/ProfilePic.png" alt="Profile Picture">
     </section>
 
     <section class="projects"></section>
 
+    <section class="cta"></section>
 
     <script src="/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>

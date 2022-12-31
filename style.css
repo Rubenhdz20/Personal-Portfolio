@@ -15,15 +15,158 @@ body {
     font-family: 'Red Hat Text', sans-serif;
 }
 
+/* NAVIGATION */
+
+.navigation-checkbox {
+    display: none;
+}
+
+.navigation-button {
+    position: fixed;
+    top: 1rem;
+    right: 2.4rem;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    background-image: radial-gradient(#191919 20%, #0066ff);
+    border-radius: 50%;
+    box-shadow: 0 1rem 3rem black;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navigation-background {
+    position: fixed;
+    top: 1rem;
+    right: 3rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#222222, #0066ff);
+    transition: transform .4s cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 100;
+    /* transform: scale(35); */
+}
+
+.navigation-nav {
+    display: none;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+    z-index: 200;
+}
+
+.navigation-list {
+    position: absolute;
+    top: 31%;
+    right: 50%;
+    transform: translate(-40%);
+    list-style: none;
+    text-align: center;
+}
+
+.navigation-item {
+    margin: 1rem;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 225%;
+    transition: all .2s;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+    color: #005bc9;
+    background-position: 100%;
+    transform: translateX(1rem);
+}
+
+.navigation-checkbox:checked ~ .navigation-background {
+    transform: scale(30);
+}
+
+.navigation-checkbox:checked ~ .navigation-nav {
+    display: inline-block;
+    opacity: 1;
+    right: 50;
+}
+
+.navigation-icon {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 2px;
+    margin-top: 3.4rem;
+    background-color: #000000;
+}
+
+.navigation-icon::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: -1rem;
+    left: 0;
+    width: 3rem;
+    height: 2px;
+    background-color: #000000;
+    transition: all .2s;
+}
+
+.navigation-icon::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 1rem;
+    left: 0;
+    width: 3rem;
+    height: 2px;
+    background-color: #000000;;
+    transition: all .2s;
+}
+
+.navigation-button:hover .navigation-icon::before {
+    top: -1.5rem;
+}
+
+.navigation-button:hover .navigation-icon::after {
+    top: 1.5rem;
+}
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+    background-color: transparent;
+}
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+
 /* HEADER  */
 
 .header {
     position: absolute;
-    top: 0;
-    z-index: 2;
     width: 100%;
     background-color: #222426;
     border-bottom: #222426;
+    z-index: 1;
 }
 
 .header-container {
@@ -71,7 +214,7 @@ body {
     display: flex;
     justify-content: space-between;
     top: 80%;
-    left: 22%;
+    left: 15%;
 }
 
 h1 {
@@ -105,6 +248,7 @@ h2 {
     padding: 1.5rem;
     border-radius: 11px;
     border: none;
+    text-transform: uppercase;
     color: white;
     background-color: #2B3333;
     cursor: pointer;
@@ -117,6 +261,7 @@ h2 {
     padding: 1.5rem;
     border-radius: 11px;
     border: none;
+    text-transform: uppercase;
     color: white;
     background-color: #2B3333;
     cursor: pointer;
@@ -130,4 +275,9 @@ h2 {
 
 .about-me {
     padding: 2.9rem 1.6rem 1.6rem;
+    background-image: linear-gradient(to bottom, #222426, #0c3859, #004b90, #005bc9, #0066ff);
+}
+
+.avatar {
+    margin-left: 6rem;
 }
