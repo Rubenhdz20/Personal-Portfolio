@@ -275,9 +275,76 @@ h2 {
 
 .about-me {
     padding: 2.9rem 1.6rem 1.6rem;
-    background-image: linear-gradient(to bottom, #222426, #0c3859, #004b90, #005bc9, #0066ff);
+    background-image: linear-gradient(to bottom, #222426 30%, #0c3859, #0066ff);
+}
+
+.about-me__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .avatar {
-    margin-left: 6rem;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.avatar:hover {
+    transform: scale(.9);
+    filter: blur(3px) brightness(80%);
+}
+
+.about-me__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: all .3s;
+}
+
+.about-me__container:hover .about-me__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.about-me__title {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.about-me__description {
+    margin-top: 2rem;
+}
+
+.about-me__description p {
+    font-size: 2rem;
+    color: white;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.about-me__technologies--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-top: 4rem;
+}
+
+.react {
+    grid-column-start: 2;
 }
