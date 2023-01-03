@@ -15,27 +15,49 @@ body {
     font-family: 'Red Hat Text', sans-serif;
 }
 
-/* NAVIGATION */
+/* MOBILE-MENU */
 
-.navigation-checkbox {
-    display: none;
-}
-
-.navigation-button {
+.header-mobile__menu {
     position: fixed;
     top: 1rem;
     right: 2.4rem;
     width: 7rem;
     height: 7rem;
-    text-align: center;
     background-image: radial-gradient(#191919 20%, #0066ff);
     border-radius: 50%;
     box-shadow: 0 1rem 3rem black;
     cursor: pointer;
-    z-index: 1000;
 }
 
-.navigation-background {
+.header-mobile__menu span:first-child {
+    margin-top: 2.3rem;
+}
+
+.header-mobile__menu span {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1.1rem;
+    width: 70%;
+    height: 2px;
+    background-color: #000000;
+    transform-origin: 0px 100%;
+    transition: all .3s;
+}
+
+.activebars-menu-1 {
+    transform: rotate(45deg) translate(1px, -8px);
+}
+
+.activebars-menu-2 {
+    opacity: 0;
+    margin-left: -3rem;
+}
+
+.activebars-menu-3 {
+    transform: rotate(-45deg) translate(2px, 9px);
+}
+
+.background {
     position: fixed;
     top: 1rem;
     right: 3rem;
@@ -43,33 +65,21 @@ body {
     height: 6rem;
     border-radius: 50%;
     background-image: radial-gradient(#222222, #0066ff);
-    transition: transform .4s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
     z-index: 100;
-    /* transform: scale(35); */
+}
+
+.header-mobile__menu:checked ~ .background {
+    transform: scale(30);
 }
 
 .navigation-nav {
     display: none;
-    position: fixed;
-    width: 0;
-    height: 100vh;
-    top: 0;
-    right: 0;
+}
+
+.active-navigation-nav {
+    display: inline-block;
     transition: all .3s;
-    z-index: 200;
-}
-
-.navigation-list {
-    position: absolute;
-    top: 31%;
-    right: 50%;
-    transform: translate(-40%);
-    list-style: none;
-    text-align: center;
-}
-
-.navigation-item {
-    margin: 1rem;
 }
 
 .navigation-link:link,
@@ -92,72 +102,6 @@ body {
     background-position: 100%;
     transform: translateX(1rem);
 }
-
-.navigation-checkbox:checked ~ .navigation-background {
-    transform: scale(30);
-}
-
-.navigation-checkbox:checked ~ .navigation-nav {
-    display: inline-block;
-    opacity: 1;
-    right: 50;
-}
-
-.navigation-icon {
-    display: inline-block;
-    position: relative;
-    width: 3rem;
-    height: 2px;
-    margin-top: 3.4rem;
-    background-color: #000000;
-}
-
-.navigation-icon::before {
-    display: inline-block;
-    position: absolute;
-    content: "";
-    top: -1rem;
-    left: 0;
-    width: 3rem;
-    height: 2px;
-    background-color: #000000;
-    transition: all .2s;
-}
-
-.navigation-icon::after {
-    display: inline-block;
-    position: absolute;
-    content: "";
-    top: 1rem;
-    left: 0;
-    width: 3rem;
-    height: 2px;
-    background-color: #000000;;
-    transition: all .2s;
-}
-
-.navigation-button:hover .navigation-icon::before {
-    top: -1.5rem;
-}
-
-.navigation-button:hover .navigation-icon::after {
-    top: 1.5rem;
-}
-
-.navigation-checkbox:checked + .navigation-button .navigation-icon {
-    background-color: transparent;
-}
-
-.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
-    top: 0;
-    transform: rotate(135deg);
-}
-
-.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-}
-
 
 /* HEADER  */
 
@@ -276,8 +220,4 @@ h2 {
 .about-me {
     padding: 2.9rem 1.6rem 1.6rem;
     background-image: linear-gradient(to bottom, #222426, #0c3859, #004b90, #005bc9, #0066ff);
-}
-
-.avatar {
-    margin-left: 6rem;
 }

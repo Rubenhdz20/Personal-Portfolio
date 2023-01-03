@@ -16,30 +16,26 @@
     <title>I am glad you are here!</title>
 </head>
 <body>
-
-    <div class="navigation">
-        <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation-button">
-            <span class="navigation-icon"></span>
-        </label>
-
-        <div class="navigation-background">&nbsp;</div>
-        
-        <nav class="navigation-nav">
-            <ul class="navigation-list">
-                <li class="navigation-item"><a href="#" class="navigation-link">Home</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">About Me</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">Projects</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
+    
     <header class="header">
         <section class="header-container">
             <p class="header-brand">RUBDEV</p>
         </section>
+
+        <div class="header-mobile__menu">
+            <span class="bars-menu-1"></span>
+            <span class="bars-menu-2"></span>
+            <span class="bars-menu-3"></span>
+        </div>
+
+        <nav id="nav" class="navigation-nav background">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="#front-page" class="navigation-link">Home</a></li>
+                <li class="navigation-item"><a href="#about" class="navigation-link">About Me</a></li>
+                <li class="navigation-item"><a href="#projects" class="navigation-link">Projects</a></li>
+                <li class="navigation-item"><a href="#cta" class="navigation-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="front-page" class="home">
@@ -55,13 +51,20 @@
         </div>
     </section>
 
-    <section class="about-me">
-        <img class="avatar" src="/img/ProfilePic.png" alt="Profile Picture">
+    <section id="about" class="about-me">
+        <div class="avatar-container">
+            <img class="avatar" src="/img/ProfilePic.png" alt="Profile Picture">
+        </div>
+
+        <figure>
+            <img src="/img/" alt="">
+        </figure>
+        
     </section>
 
-    <section class="projects"></section>
+    <section id="projects" class="projects"></section>
 
-    <section class="cta"></section>
+    <section id="cta" class="cta"></section>
 
     <script src="/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
