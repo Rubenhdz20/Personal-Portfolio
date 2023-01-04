@@ -47,11 +47,11 @@
        
         <div class="home-btns">
             <button class="btn-download">Download CV</button>
-            <button class="btn-contact-me">Contact Me</button>
+            <button class="btn-contact-me" href="#about">Contact Me</button>
         </div>
     </section>
 
-    <section class="about-me">
+    <section id="about" class="about-me">
         <h2 class="about-me__title">Who am I?</h2>
 
         <figure class="about-me__container">
@@ -76,31 +76,56 @@
                 <img src="/img/Figma.png" alt="Figma">
                 <img src="/img/Git.png" alt="Git">
                 <img src="/img/Javascript.png" alt="Javascript">
-                <img src="/img/Github.png" alt="Github">
+                <img class="github" src="/img/Github.png" alt="Github">
                 <img class="react" src="/img/React.js.png" alt="ReactJs">
             </figure>
         </div>
     </section>
 
-    <section id="projects" class="projects"></section>
+    <section id="projects" class="projects">
+        <h3>Projects</h3>
+
+        <div class="projects-description">
+            <p> Here are some projects created with ❤️, they have helped me understand the use and application of the different technologies used in the frontend, by the time you are reading this I will be creating more!</p>
+        </div>
+
+        <div class="projects-container">
+            <img class="project-overview" src="/img/VideoGame.png" alt="First Project">
+            
+            <figure class="project-technologies">
+                <img src="/img/HTML.png" alt="Html">
+                <img src="/img/CSS.png" alt="Css">
+                <img src="/img/Git.png" alt="Git">
+                <img src="/img/Javascript.png" alt="Javascript">
+            </figure>
+
+            <p class="project-description">
+                VideoGame created with Canvas and JavaScript in which I could add the interactions with the player and establish their position on the map, put the entrances and exits of each level, put the obstacles through emojis saved in objects, with two-dimensional arrays display the map, use LocalStorage to save the player's record, add interaction to restart the game again, put lives to the player and when it will crash reduce them, all this was a great learning that enable me to understand how step by step to develop the logic of the game.
+            </p>
+
+            <div class="project-redirection">
+                <a href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a>
+            </div>
+        </div>
+    </section>
 
     <section id="cta" class="cta"></section>
 
     <script src="/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
-    VANTA.TRUNK({
-        el: "#front-page",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x2051cc
-    })
+        VANTA.WAVES({
+          el: "#front-page",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x1770
+        })
     </script>
 </body>
 </html>

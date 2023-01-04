@@ -23,7 +23,7 @@ body {
     right: 2.4rem;
     width: 7rem;
     height: 7rem;
-    background-image: radial-gradient(#191919 20%, #0066ff);
+    background-image: radial-gradient(#000367 20%, #0034ff);
     border-radius: 50%;
     box-shadow: 0 1rem 3rem black;
     cursor: pointer;
@@ -108,7 +108,7 @@ body {
 .header {
     position: absolute;
     width: 100%;
-    background-color: #222426;
+    background-color: #000000;
     border-bottom: #222426;
     z-index: 1;
 }
@@ -194,7 +194,7 @@ h2 {
     border: none;
     text-transform: uppercase;
     color: white;
-    background-color: #2B3333;
+    background-color: #000000;
     cursor: pointer;
     box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
     -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
@@ -207,7 +207,7 @@ h2 {
     border: none;
     text-transform: uppercase;
     color: white;
-    background-color: #2B3333;
+    background-color: #000000;
     cursor: pointer;
     box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
     -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
@@ -219,7 +219,7 @@ h2 {
 
 .about-me {
     padding: 2.9rem 1.6rem 1.6rem;
-    background-image: linear-gradient(to bottom, #222426 30%, #0c3859, #0066ff);
+    background-color: #000000;
 }
 
 .about-me__container {
@@ -247,7 +247,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: rgb(0, 4, 55);
     opacity: 0;
     backface-visibility: hidden;
     transition: all .3s;
@@ -259,11 +259,13 @@ h2 {
 }
 
 .about-me__title {
+    margin-bottom: 5rem;
     font-size: 2.8rem;
     font-style: italic;
     font-weight: bold;
-    margin-bottom: 5rem;
+    text-transform: uppercase;
     text-align: center;
+
 }
 
 .about-me__description {
@@ -279,6 +281,7 @@ h3 {
     font-size: 2rem;
     text-align: center;
     color: white;
+    text-transform: uppercase;
 }
 
 .about-me__technologies--container {
@@ -291,4 +294,72 @@ h3 {
 
 .react {
     grid-column-start: 2;
+}
+
+.github {
+    background-color: white;
+    border-radius: 20%;
+}
+
+/* ABOUT ME */
+
+.projects {
+    padding: 2.9rem 1.6rem 1.6rem;
+    background-color: #000000;
+}
+
+.projects h3 {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.projects-description p {
+    font-size: 2rem;
+    color: white;
+}
+
+.projects-container {
+    display: grid;
+    justify-items: center;
+    margin-top: 4rem;
+    height: 60rem;
+    padding: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: radial-gradient(#000367 20%, #0034ff);
+    box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.13);
+}
+
+.project-overview {
+    width: 50%;
+}
+
+.project-description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.project-redirection__view {
+    margin-right: 2rem;
+    padding: 1.5rem;
+    border-radius: 11px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+    box-shadow: -8px 10px 32px 4px rgba(0, 0, 0, 0.595);
+    -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+}
+
+.project-redirection__view a {
+    text-decoration: none;
+    color: white;
 }
