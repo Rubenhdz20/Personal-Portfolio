@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@500&family=Red+Hat+Text:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mediaqueries.css">
     <!-- <link rel="stylesheet" href="../css/index/tablet.css" media="screen and (min-width:768px)"/>
     <link rel="stylesheet" href="../css/index/desktop.css" media="screen and (min-width:1024px)"/> -->
-    <title>I am glad you are here!</title>
+    <title>Ruben Hernandez</title>
 </head>
 <body>
     
@@ -42,12 +43,12 @@
         <div class="home-titles">
             <h1>Welcome!</h1>
             <h2>I am Ruben</h2>
-            <p class="home-title__position">Frontend Developer 💻</p> 
+            <p class="home-title__position">Frontend Developer</p> 
         </div>
        
         <div class="home-btns">
-            <button class="btn-download">Download CV</button>
-            <button class="btn-contact-me" href="#about">Contact Me</button>
+            <a href="/pdf/cv.pdf" download="CV_FrontendDeveloper_Ruben Hernandez Alvarado"><button class="btn-download">Download CV</button></a>
+            
         </div>
     </section>
 
@@ -86,30 +87,131 @@
         <h3>Projects</h3>
 
         <div class="projects-description">
-            <p> Here are some projects created with ❤️, they have helped me understand the use and application of the different technologies used in the frontend, by the time you are reading this I will be creating more!</p>
+            <p> Here are some projects that have helped me understand the importance and application of the different technologies used in the frontend, by the time you are reading this I will be creating more!</p>
         </div>
 
         <div class="projects-container">
             <img class="project-overview" src="/img/VideoGame.png" alt="First Project">
+
+            <p class="project-name">Surf Video Game</p>
             
             <figure class="project-technologies">
                 <img src="/img/HTML.png" alt="Html">
                 <img src="/img/CSS.png" alt="Css">
-                <img src="/img/Git.png" alt="Git">
                 <img src="/img/Javascript.png" alt="Javascript">
+                <img src="/img/Git.png" alt="Git">
             </figure>
 
             <p class="project-description">
-                VideoGame created with Canvas and JavaScript in which I could add the interactions with the player and establish their position on the map, put the entrances and exits of each level, put the obstacles through emojis saved in objects, with two-dimensional arrays display the map, use LocalStorage to save the player's record, add interaction to restart the game again, put lives to the player and when it will crash reduce them, all this was a great learning that enable me to understand how step by step to develop the logic of the game.
+                VideoGame created with Canvas and JavaScript in which I could add the interactions with the player and establish their position on the map, the idea is to move the player through every wave to change the level until finally you can reach the end!
+            </p>
+
+            <div class="project-redirection__game">
+                <a class="project-redirection__live" href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
+                <a class="project-redirection__code" href="https://github.com/Rubenhdz20/VideoGameJS" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <img class="project-overview__yardsale" src="/img/Analysis.png" alt="First Project">
+
+            <p class="project-name">Salary Analysis</p>
+            
+            <figure class="project-technologies">
+                <img src="/img/HTML.png" alt="Html">
+                <img src="/img/CSS.png" alt="Css">
+                <img src="/img/Javascript.png" alt="Javascript">
+                <img src="/img/Git.png" alt="Git">
+            </figure>
+
+            <p class="project-description">
+                Being able to apply mathematics and basic statistics combined with Javascript has made me go beyond my logical thinking, solving percentage problems in which I create discount coupons to apply it to products and reduce their prices, formulas to take out the perimeter and area of geometric figures, determine the average, median and mode that later helped me determine a salary projection per person.
             </p>
 
             <div class="project-redirection">
-                <a href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a>
+                <a class="project-redirection__live" href="https://salary-analisis.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
+                <a class="project-redirection__code" href="https://github.com/Rubenhdz20/Salary-Analysis" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <img class="project-overview" src="/img/Yardsale.png" alt="First Project">
+            
+            <p class="project-name">Yardsale</p>
+
+            <figure class="project-technologies">
+                <img src="/img/HTML.png" alt="Html">
+                <img src="/img/CSS.png" alt="Css">
+                <img src="/img/Javascript.png" alt="Javascript">
+                <img src="/img/Git.png" alt="Git">
+            </figure>
+
+            <p class="project-description">
+                In this project I learned to apply the fundamentals of JavaScript such as variables, functions, conditionals, cycles, arrays and objects, which helped me implement different interactions such as displaying products from the store, adding products to your cart, removing products and being able to navigate on the page. By manipulating the DOM all this was possible in order to merge the different components that are part of the website.
+            </p>
+
+            <div class="project-redirection">
+                <a class="project-redirection__live" href="https://yard-sale-web.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
+                <a class="project-redirection__code" href="https://github.com/Rubenhdz20/YardSale" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <img class="project-overview__omnifood" src="/img/Omnifood.png" alt="First Project">
+
+            <p class="project-name">Omnifood</p>
+            
+            <figure class="project-technologies">
+                <img src="/img/HTML.png" alt="Html">
+                <img src="/img/CSS.png" alt="Css">
+                <img src="/img/Javascript.png" alt="Javascript">
+                <img src="/img/Git.png" alt="Git">
+            </figure>
+
+            <p class="project-description">
+                In this project I have learned to improve my layout skills with methodologies such as BEM that gives a better structuring to the layout of the page, also to understand the responsive design that today is widely used with the mobile first methodology, to apply animations for a better flow on the page making a cleaner navigation.
+            </p>
+
+            <div class="project-redirection">
+                <a class="project-redirection__live" href="https://omnifood-aiweb.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
+                <a class="project-redirection__code" href="https://github.com/Rubenhdz20/Omnifood-Project" target="_blank" rel="noopener noreferrer">Source Code</a></button>
             </div>
         </div>
     </section>
 
-    <section id="cta" class="cta"></section>
+    <section id="cta" class="cta">
+        <p class="cta-title">LET'S WORK TOGETHER!</p>
+
+        <div class="cta-container">
+            <ul class="cta-media">
+                <li class="cta-media__links">
+                    <span><img src="/img/linkedin.png" alt="LinkedIn-Logo"></span>
+                    <div>
+                        <a href="https://www.linkedin.com/in/ruben-hernandez-alvarado/" target="_blank" rel="noopener noreferrer"><p class="cta-media__linkedin">LinkedIn</p></a>
+                    </div>
+                </li>
+                <li class="cta-media__links">
+                    <span><img class="github-logo" src="/img/Github.png" alt="Github-Logo"></span>
+                    <div>
+                        <a href="https://github.com/Rubenhdz20" target="_blank" rel="noopener noreferrer"><p class="cta-media__github">Github</p></a>
+                    </div>
+                </li>
+                <li class="cta-media__links">
+                    <span><img src="/img/twitter1.png" alt="Twitter-Logo"></span>
+                    <div>
+                        <a href="https://twitter.com/rubenhernande90" target="_blank" rel="noopener noreferrer"><p class="cta-media__twitter">Twitter</p></a>
+                    </div>
+                </li>
+                <li class="cta-media__links">
+                    <span><img src="/img/gmail.png" alt="Gmail-Logo"></span>
+                    <div>
+                        <a href="mailto:rubhernandez42@gmail.com"><p class="cta-media__gmail">rubhernandez42@gmail.com</p></a>
+                    </div>
+                </li>
+            </ul>
+            <p class="cta-credits">Designed & Built by Ruben - Made with ❤️ in 🇲🇽</p>
+        </div>
+    </section>
 
     <script src="/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>

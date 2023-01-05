@@ -14,12 +14,10 @@ function animateBars() {
     nav.classList.toggle('active-navigation-nav');
 }
 
-
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+  link.addEventListener("click", function () {
     const href = link.getAttribute("href");
 
     // Scroll to other links

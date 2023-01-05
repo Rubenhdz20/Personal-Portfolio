@@ -15,7 +15,7 @@ body {
     font-family: 'Red Hat Text', sans-serif;
 }
 
-/* MOBILE-MENU */
+/******* MOBILE-MENU ******/
 
 .header-mobile__menu {
     position: fixed;
@@ -23,7 +23,7 @@ body {
     right: 2.4rem;
     width: 7rem;
     height: 7rem;
-    background-image: radial-gradient(#000367 20%, #0034ff);
+    background-image: radial-gradient(#000367 20%, #3a62ff);
     border-radius: 50%;
     box-shadow: 0 1rem 3rem black;
     cursor: pointer;
@@ -103,7 +103,7 @@ body {
     transform: translateX(1rem);
 }
 
-/* HEADER  */
+/******** HEADER ********/
 
 .header {
     position: absolute;
@@ -131,7 +131,7 @@ body {
     color: white;
 }
 
-/* HOME SECTION */
+/******** HOME SECTION *********/
 
 .home {
     position: relative;
@@ -144,8 +144,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 41%;
-    left: 23%;
+    top: 40%;
+    left: 28%;
 }
 
 .home-title__position {
@@ -156,9 +156,9 @@ body {
 .home-btns {
     position: absolute;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     top: 80%;
-    left: 15%;
+    left: 32%;
 }
 
 h1 {
@@ -188,7 +188,6 @@ h2 {
 }
 
 .btn-download {
-    margin-right: 2rem;
     padding: 1.5rem;
     border-radius: 11px;
     border: none;
@@ -199,6 +198,12 @@ h2 {
     box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
     -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+}
+
+.btn-download:active,
+.btn-download:hover {
+    background-color: #3a62ff;
+    color: white;
 }
 
 .btn-contact-me {
@@ -214,8 +219,14 @@ h2 {
     -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
 }
 
+.btn-contact-me:active,
+.btn-contact-me:hover {
+    background-color: #3a62ff;
+    color: white;
+}
 
-/* ABOUT ME */
+
+/******** ABOUT ME *********/
 
 .about-me {
     padding: 2.9rem 1.6rem 1.6rem;
@@ -301,7 +312,7 @@ h3 {
     border-radius: 20%;
 }
 
-/* ABOUT ME */
+/******** PROJECTS *********/
 
 .projects {
     padding: 2.9rem 1.6rem 1.6rem;
@@ -329,7 +340,7 @@ h3 {
     padding: 2rem;
     border-radius: 12px;
     overflow: hidden;
-    background-image: radial-gradient(#000367 20%, #0034ff);
+    background-image: radial-gradient(#65aef9bf 20%, #1544ff);
     box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0);
     -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.13);
     -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.13);
@@ -339,27 +350,183 @@ h3 {
     width: 50%;
 }
 
+.project-overview__yardsale {
+    width: 50%;
+    height: 16rem;
+}
+
+.project-overview__omnifood {
+    width: 60%;
+    height: 16rem;
+}
+
+.project-name {
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
 .project-description {
     font-size: 1.5rem;
     text-align: center;
     color: white;
 }
 
-.project-redirection__view {
+.project-redirection__live {
+    display: inline-block;
+    margin-left: 3rem;
     margin-right: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 11px;
     border: none;
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
     background-color: #000000;
     cursor: pointer;
-    box-shadow: -8px 10px 32px 4px rgba(0, 0, 0, 0.595);
-    -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+    box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
 }
 
-.project-redirection__view a {
+.project-redirection__live:active,
+.project-redirection__live:hover {
+    background-color: #3a62ff;
+    color: white;
+}
+
+.project-redirection__code {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 11px;
+    border: none;
+    text-transform: uppercase;
     text-decoration: none;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+    box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
+}
+
+.project-redirection__code:active,
+.project-redirection__code:hover {
+    background-color: #3a62ff;
+    color: white;
+}
+
+.project-redirection__game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******** CONTACT ME   ********/
+
+.cta {
+    padding:  1.6rem 1.6rem;
+    background-color: #000000;
+}
+
+.cta-title {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 3rem;
+}
+
+.cta-media {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cta-media__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-media__links a {
+    text-decoration: none;
+}
+
+.cta-media__linkedin {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    line-height: 1;
+    border: none;
+    color: white;
+}
+
+.cta-media__github {
+    margin-left: 1rem;
+    font-size: 2rem;
+    line-height: 1;
+    border-radius: 1px;
+    color: white;
+}
+
+.cta-media__twitter {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    line-height: 1;
+    border: none;
+    color: white;
+}
+
+.cta-media__gmail {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    line-height: 1;
+    border: none;
+    color: white;
+}
+
+.cta-media__linkedin:active,
+.cta-media__linkedin:hover {
+    color: rgb(0, 0, 129);
+}
+
+.cta-media__github:active,
+.cta-media__github:hover {
+    color: rgb(0, 0, 129);
+}
+
+.cta-media__twitter:active,
+.cta-media__twitter:hover {
+    color: rgb(0, 0, 129);
+}
+
+.cta-media__gmail:active,
+.cta-media__gmail:hover {
+    color: rgb(0, 0, 129);
+}
+
+.github-logo {
+    margin-right: 1rem;
+    height: 3.2rem;
+    background-color: white;
+    border-radius: 20%;
+}
+
+.cta-credits {
+    margin-top: 5rem;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
     color: white;
 }
