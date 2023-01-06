@@ -1,11 +1,11 @@
-document.querySelector('.header-mobile__menu').addEventListener('click', animateBars);
+document.querySelector('.header--mobile-menu').addEventListener('click', animateBars);
 
 let header = document.querySelector('.header');
-let bar1 = document.querySelector('.bars-menu-1');
-let bar2 = document.querySelector('.bars-menu-2');
-let bar3 = document.querySelector('.bars-menu-3');
+let bar1 = document.querySelector('.mobile-bars1');
+let bar2 = document.querySelector('.mobile-bars2');
+let bar3 = document.querySelector('.mobile-bars3');
 let nav =  document.querySelector('#nav');
-let link =  document.querySelector('.navigation-link');
+let link =  document.querySelector('.nav--link');
 
 function animateBars() {
     bar1.classList.toggle('activebars-menu-1');

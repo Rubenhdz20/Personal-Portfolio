@@ -17,7 +17,7 @@ body {
 
 /******* MOBILE-MENU ******/
 
-.header-mobile__menu {
+.header--mobile-menu {
     position: fixed;
     top: 1rem;
     right: 2.4rem;
@@ -29,11 +29,11 @@ body {
     cursor: pointer;
 }
 
-.header-mobile__menu span:first-child {
+.header--mobile-menu span:first-child {
     margin-top: 2.3rem;
 }
 
-.header-mobile__menu span {
+.header--mobile-menu span {
     display: block;
     margin-top: 1rem;
     margin-left: 1.1rem;
@@ -73,7 +73,11 @@ body {
     transform: scale(30);
 }
 
-.navigation-nav {
+.nav {
+    display: none;
+}
+
+.nav2 {
     display: none;
 }
 
@@ -82,8 +86,8 @@ body {
     transition: all .3s;
 }
 
-.navigation-link:link,
-.navigation-link:visited {
+.nav--link:link,
+.nav--link:visited {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 3rem;
@@ -96,8 +100,8 @@ body {
     transition: all .2s;
 }
 
-.navigation-link:hover,
-.navigation-link:active {
+.nav--link:hover,
+.nav--link:active {
     color: #005bc9;
     background-position: 100%;
     transform: translateX(1rem);
@@ -113,7 +117,7 @@ body {
     z-index: 1;
 }
 
-.header-container {
+.header--brand-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -126,7 +130,7 @@ body {
     padding: 1.2rem 1.6rem;
 }
 
-.header-brand {
+.header--brand-container p {
     font-size: 2rem;
     color: white;
 }
@@ -139,26 +143,26 @@ body {
     height: 100vh;
 }
 
-.home-titles {
+.home--titles {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     top: 40%;
-    left: 28%;
+    left: 30%;
 }
 
-.home-title__position {
+.home--title__position {
     font-size: 2rem;
     color: white;
 }
 
-.home-btns {
+.home--btns {
     position: absolute;
     display: flex;
     justify-content: center;
     top: 80%;
-    left: 32%;
+    left: 35%;
 }
 
 h1 {
@@ -187,7 +191,7 @@ h2 {
     justify-content: space-between;
 }
 
-.btn-download {
+.btn--download {
     padding: 1.5rem;
     border-radius: 11px;
     border: none;
@@ -200,8 +204,8 @@ h2 {
     -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
 }
 
-.btn-download:active,
-.btn-download:hover {
+.btn--download:active,
+.btn--download:hover {
     background-color: #3a62ff;
     color: white;
 }
@@ -233,23 +237,23 @@ h2 {
     background-color: #000000;
 }
 
-.about-me__container {
+.about-me--container {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.avatar {
+.about-me--avatar {
     transform: scale(1.2);
     transition: all .5s;
 }
 
-.avatar:hover {
+.about-me--avatar:hover {
     transform: scale(.9);
     filter: blur(3px) brightness(80%);
 }
 
-.about-me__caption {
+.about-me--caption {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -264,38 +268,39 @@ h2 {
     transition: all .3s;
 }
 
-.about-me__container:hover .about-me__caption {
+.about-me--container:hover .about-me--caption {
     opacity: 1;
     transform: translate(-50%, -50%);
 }
 
-.about-me__title {
+.about-me--title {
     margin-bottom: 5rem;
     font-size: 2.8rem;
     font-style: italic;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-
 }
 
-.about-me__description {
+.about-me--description {
     margin-top: 2rem;
 }
 
-.about-me__description p {
+.about-me--description p {
     font-size: 2rem;
+    text-align: center;
     color: white;
 }
 
 h3 {
+    margin-top: 4rem;
     font-size: 2rem;
     text-align: center;
     color: white;
     text-transform: uppercase;
 }
 
-.about-me__technologies--container {
+.about-me--technologies-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -308,8 +313,8 @@ h3 {
 }
 
 .github {
-    background-color: white;
-    border-radius: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
 }
 
 /******** PROJECTS *********/
@@ -327,12 +332,13 @@ h3 {
     text-align: center;
 }
 
-.projects-description p {
+.projects--description p {
     font-size: 2rem;
+    text-align: center;
     color: white;
 }
 
-.projects-container {
+.projects--container {
     display: grid;
     justify-items: center;
     margin-top: 4rem;
@@ -346,34 +352,44 @@ h3 {
     -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.13);
 }
 
-.project-overview {
-    width: 50%;
+.project--overview {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10%;
 }
 
-.project-overview__yardsale {
-    width: 50%;
-    height: 16rem;
+.project--overview__analysis {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10%;
 }
 
-.project-overview__omnifood {
-    width: 60%;
-    height: 16rem;
+.project--overview__yardsale {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10%;
 }
 
-.project-name {
+.project--overview__omnifood {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10%;
+}
+
+.project--name {
     margin-bottom: 0;
     font-size: 2rem;
     text-transform: uppercase;
     color: white;
 }
 
-.project-description {
+.project--description {
     font-size: 1.5rem;
     text-align: center;
     color: white;
 }
 
-.project-redirection__live {
+.project--redirection__live {
     display: inline-block;
     margin-left: 3rem;
     margin-right: 2rem;
@@ -390,13 +406,13 @@ h3 {
     -moz-box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
 }
 
-.project-redirection__live:active,
-.project-redirection__live:hover {
+.project--redirection__live:active,
+.project--redirection__live:hover {
     background-color: #3a62ff;
     color: white;
 }
 
-.project-redirection__code {
+.project--redirection__code {
     display: inline-block;
     margin-right: 2rem;
     padding: 1rem;
@@ -412,13 +428,13 @@ h3 {
     -moz-box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
 }
 
-.project-redirection__code:active,
-.project-redirection__code:hover {
+.project--redirection__code:active,
+.project--redirection__code:hover {
     background-color: #3a62ff;
     color: white;
 }
 
-.project-redirection__game {
+.project--redirection__game {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,11 +443,12 @@ h3 {
 /******** CONTACT ME   ********/
 
 .cta {
+    margin: 0 auto;
     padding:  1.6rem 1.6rem;
     background-color: #000000;
 }
 
-.cta-title {
+.cta--title {
     margin-top: 5rem;
     font-size: 2rem;
     text-align: center;
@@ -439,32 +456,32 @@ h3 {
     color: white;
 }
 
-.cta-container {
+.cta--container {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     margin-top: 3rem;
 }
 
-.cta-media {
+.cta--media {
     width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.cta-media__links {
+.cta--media__links {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.cta-media__links a {
+.cta--media__links a {
     text-decoration: none;
 }
 
-.cta-media__linkedin {
+.cta--media__linkedin {
     margin-left: 1.5rem;
     font-size: 2rem;
     line-height: 1;
@@ -472,7 +489,7 @@ h3 {
     color: white;
 }
 
-.cta-media__github {
+.cta--media__github {
     margin-left: 1rem;
     font-size: 2rem;
     line-height: 1;
@@ -480,7 +497,7 @@ h3 {
     color: white;
 }
 
-.cta-media__twitter {
+.cta--media__twitter {
     margin-left: 1.5rem;
     font-size: 2rem;
     line-height: 1;
@@ -488,7 +505,7 @@ h3 {
     color: white;
 }
 
-.cta-media__gmail {
+.cta--media__gmail {
     margin-left: 1.5rem;
     font-size: 2rem;
     line-height: 1;
@@ -496,23 +513,23 @@ h3 {
     color: white;
 }
 
-.cta-media__linkedin:active,
-.cta-media__linkedin:hover {
+.cta--media__linkedin:active,
+.cta--media__linkedin:hover {
     color: rgb(0, 0, 129);
 }
 
-.cta-media__github:active,
-.cta-media__github:hover {
+.cta--media__github:active,
+.cta--media__github:hover {
     color: rgb(0, 0, 129);
 }
 
-.cta-media__twitter:active,
-.cta-media__twitter:hover {
+.cta--media__twitter:active,
+.cta--media__twitter:hover {
     color: rgb(0, 0, 129);
 }
 
-.cta-media__gmail:active,
-.cta-media__gmail:hover {
+.cta--media__gmail:active,
+.cta--media__gmail:hover {
     color: rgb(0, 0, 129);
 }
 
@@ -520,10 +537,10 @@ h3 {
     margin-right: 1rem;
     height: 3.2rem;
     background-color: white;
-    border-radius: 20%;
+    border-radius: 100%;
 }
 
-.cta-credits {
+.cta--credits {
     margin-top: 5rem;
     font-size: 1rem;
     text-align: center;
