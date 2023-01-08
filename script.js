@@ -25,8 +25,6 @@ allLinks.forEach(function (link) {
 
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
       bar1.classList.toggle('activebars-menu-1');
       bar2.classList.toggle('activebars-menu-2');
       bar3.classList.toggle('activebars-menu-3');

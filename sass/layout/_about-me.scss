@@ -25,20 +25,19 @@
         }
         .about-me--caption {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, 20%);
             font-size: 1.7rem;
             font-weight: bold;
             text-align: center;
             text-transform: uppercase;
-            color: $links-color;
             opacity: 0;
+            color: $dark;
             backface-visibility: hidden;
             transition: all .3s;
-            .about-me--container:hover .about-me--caption {
+            &:hover {
                 opacity: 1;
-                transform: translate(-50%, -50%);
             }
         }
     }

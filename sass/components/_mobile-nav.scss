@@ -40,10 +40,10 @@
         top: 1.5rem;
         right: 2.4rem;
         background-image: $gradient-blue;
-        -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-        transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        // -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        // transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        // transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all .8s;
         @include media(desktop) {
             display: none;
         }  
@@ -51,11 +51,35 @@
 
     .nav {
         display: none;
-        transition: all .2s;
         @include media(desktop) {
             display: none;
         }  
     }    
+}
+
+.nav--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    @include media(desktop) {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }  
+}
+
+.nav--item {
+    display: flex;
+    justify-content: center;
+    .emoji {
+        width: 24rem;
+        height: 9rem;
+        @include media(tablet) {
+           width: 82rem;
+        }
+    }
 }
 
 .nav--link:link,
@@ -86,14 +110,6 @@
     transform: translateX(1rem);
 }
 
-.nav--list {
-    list-style: none;
-    @include media(desktop) {
-        display: flex;
-        list-style: none;
-    }  
-}
-
 .activebars-menu-1 {
     transform: rotate(45deg) translate(1px, -8px);
 }
@@ -108,8 +124,11 @@
 }
 
 .scale {
-    transition: all .5s;
     transform: scale(50);
+    @include media(tablet) {
+        transition: all .4s;
+        transform: scale(90);
+    } 
 }
 
 .nav2 {
@@ -120,15 +139,14 @@
 }
 
 .active-navigation-nav {
-    display: inline-block;
     position: fixed;
-    top: 21rem;
-    left: 9rem;
+    top: 5rem;
+    left: 0rem;
     text-align: center;
     transition: all .2s;
     @include media(tablet) {
-        top: 33rem;
-        left: 26rem;
+        top: 15rem;
+        right: -1rem;
 	}
     @include media(desktop) {
         display: none;

@@ -12,6 +12,7 @@ html {
 
 body {
   scroll-behavior: smooth;
+  overflow: scroll;
   font-family: 'Noto Serif Georgian', serif;
   font-family: 'Red Hat Text', sans-serif; }
 
@@ -51,19 +52,37 @@ body {
     top: 1.5rem;
     right: 2.4rem;
     background-image: radial-gradient(#000367 20%, #3a62ff);
-    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+    transition: all .8s; }
     @media (min-width: 851px) and (max-width: 1600px) {
       .navigation .background {
         display: none; } }
   .navigation .nav {
-    display: none;
-    transition: all .2s; }
+    display: none; }
     @media (min-width: 851px) and (max-width: 1600px) {
       .navigation .nav {
         display: none; } }
+
+.nav--list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none; }
+  @media (min-width: 851px) and (max-width: 1600px) {
+    .nav--list {
+      display: flex;
+      flex-direction: row;
+      list-style: none; } }
+
+.nav--item {
+  display: flex;
+  justify-content: center; }
+  .nav--item .emoji {
+    width: 24rem;
+    height: 9rem; }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .nav--item .emoji {
+        width: 82rem; } }
 
 .nav--link:link,
 .nav--link:visited {
@@ -93,13 +112,6 @@ body {
   background-position: 100%;
   transform: translateX(1rem); }
 
-.nav--list {
-  list-style: none; }
-  @media (min-width: 851px) and (max-width: 1600px) {
-    .nav--list {
-      display: flex;
-      list-style: none; } }
-
 .activebars-menu-1 {
   transform: rotate(45deg) translate(1px, -8px); }
 
@@ -111,8 +123,11 @@ body {
   transform: rotate(-45deg) translate(2px, 9px); }
 
 .scale {
-  transition: all .5s;
   transform: scale(50); }
+  @media (min-width: 500px) and (max-width: 850px) {
+    .scale {
+      transition: all .4s;
+      transform: scale(90); } }
 
 .nav2 {
   display: none; }
@@ -121,16 +136,15 @@ body {
       display: flex; } }
 
 .active-navigation-nav {
-  display: inline-block;
   position: fixed;
-  top: 21rem;
-  left: 9rem;
+  top: 5rem;
+  left: 0rem;
   text-align: center;
   transition: all .2s; }
   @media (min-width: 500px) and (max-width: 850px) {
     .active-navigation-nav {
-      top: 33rem;
-      left: 26rem; } }
+      top: 15rem;
+      right: -1rem; } }
   @media (min-width: 851px) and (max-width: 1600px) {
     .active-navigation-nav {
       display: none; } }
@@ -276,20 +290,19 @@ body {
         filter: blur(3px) brightness(80%); }
     .about-me--img .about-me--caption {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, 20%);
       font-size: 1.7rem;
       font-weight: bold;
       text-align: center;
       text-transform: uppercase;
-      color: #000081;
       opacity: 0;
+      color: #000000;
       backface-visibility: hidden;
       transition: all .3s; }
-      .about-me--img .about-me--caption .about-me--container:hover .about-me--caption {
-        opacity: 1;
-        transform: translate(-50%, -50%); }
+      .about-me--img .about-me--caption:hover {
+        opacity: 1; }
   .about-me--description {
     margin-top: 2rem; }
     .about-me--description p {
