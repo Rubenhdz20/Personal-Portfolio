@@ -1,5 +1,6 @@
+/* Media Queries Mixin
+**********************/
 /* COLORS */
-/* TYPOGRAPHY */
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,9 @@ body {
       background-color: #000000;
       transform-origin: 0px 100%;
       transition: all .3s; }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .navigation .header--mobile-menu {
+        display: none; } }
   .navigation .background {
     height: 6rem;
     width: 6rem;
@@ -51,31 +55,50 @@ body {
     transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .navigation .background {
+        display: none; } }
   .navigation .nav {
-    display: none; }
-    .navigation .nav .nav--list {
-      list-style: none; }
-      .navigation .nav .nav--list .nav--item {
-        padding: 2rem;
-        text-align: center; }
-        .navigation .nav .nav--list .nav--item .nav--link:link,
-        .navigation .nav .nav--list .nav--item .nav--link:visited {
-          display: inline-block;
-          padding: 1rem 2rem;
-          font-size: 3rem;
-          font-weight: 300;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: white;
-          background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-          background-size: 225%;
-          transition: all .2s; }
-          .navigation .nav .nav--list .nav--item .nav--link:link:hover, .navigation .nav .nav--list .nav--item .nav--link:link:active,
-          .navigation .nav .nav--list .nav--item .nav--link:visited:hover,
-          .navigation .nav .nav--list .nav--item .nav--link:visited:active {
-            color: #005bc9;
-            background-position: 100%;
-            transform: translateX(1rem); }
+    display: none;
+    transition: all .2s; }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .navigation .nav {
+        display: none; } }
+
+.nav--link:link,
+.nav--link:visited {
+  display: inline-block;
+  padding: 3rem;
+  font-size: 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(80deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 225%;
+  transition: all .2s; }
+  @media (min-width: 500px) and (max-width: 850px) {
+    .nav--link:link,
+    .nav--link:visited {
+      font-size: 5rem; } }
+  @media (min-width: 851px) and (max-width: 1600px) {
+    .nav--link:link,
+    .nav--link:visited {
+      font-size: 2rem;
+      background-image: linear-gradient(80deg, transparent 0%, transparent 50%, white 50%); } }
+
+.nav--link:hover,
+.nav--link:active {
+  color: #005bc9;
+  background-position: 100%;
+  transform: translateX(1rem); }
+
+.nav--list {
+  list-style: none; }
+  @media (min-width: 851px) and (max-width: 1600px) {
+    .nav--list {
+      display: flex;
+      list-style: none; } }
 
 .activebars-menu-1 {
   transform: rotate(45deg) translate(1px, -8px); }
@@ -93,6 +116,9 @@ body {
 
 .nav2 {
   display: none; }
+  @media (min-width: 851px) and (max-width: 1600px) {
+    .nav2 {
+      display: flex; } }
 
 .active-navigation-nav {
   display: inline-block;
@@ -100,7 +126,14 @@ body {
   top: 21rem;
   left: 9rem;
   text-align: center;
-  transition: all .5s; }
+  transition: all .2s; }
+  @media (min-width: 500px) and (max-width: 850px) {
+    .active-navigation-nav {
+      top: 33rem;
+      left: 26rem; } }
+  @media (min-width: 851px) and (max-width: 1600px) {
+    .active-navigation-nav {
+      display: none; } }
 
 .header {
   width: 100%;
@@ -121,6 +154,12 @@ body {
     .header .header--brand-container p {
       font-size: 2rem;
       color: white; }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .header .header--brand-container p {
+          margin-left: 1rem; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .header .header--brand-container {
+        padding: 0rem; } }
 
 .home {
   position: relative;
@@ -131,19 +170,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 32%;
+    top: 30%;
     left: 30%; }
     .home .home--titles h1 {
       font-size: 3.2rem;
       margin-bottom: 1rem;
       color: white; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .home .home--titles h1 {
+          font-size: 5rem; } }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .home .home--titles h1 {
+          font-size: 6rem; } }
     .home .home--titles h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
       color: white; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .home .home--titles h2 {
+          font-size: 3.5rem; } }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .home .home--titles h2 {
+          font-size: 4rem; } }
     .home .home--titles__position {
       font-size: 2rem;
       color: white; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .home .home--titles__position {
+          font-size: 2.5rem; } }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .home .home--titles__position {
+          font-size: 3rem; } }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .home .home--titles {
+        top: 40%;
+        left: 40%; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .home .home--titles {
+        top: 25%;
+        left: 41.5%; } }
   .home .home--btns {
     position: absolute;
     display: flex;
@@ -164,6 +229,18 @@ body {
       .home .home--btns .btn--download:active, .home .home--btns .btn--download:hover {
         background-color: #3a62ff;
         color: white; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .home .home--btns .btn--download {
+          font-size: 1.7rem;
+          padding: 3rem; } }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .home .home--btns {
+        top: 80%;
+        left: 41%; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .home .home--btns {
+        top: 70%;
+        left: 45.5%; } }
 
 .position {
   margin-bottom: 1rem;
@@ -225,6 +302,9 @@ body {
     text-align: center;
     color: white;
     text-transform: uppercase; }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .about-me--tools h3 {
+        font-size: 2.5rem; } }
   .about-me--tools .about-me--technologies {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -234,8 +314,25 @@ body {
     .about-me--tools .about-me--technologies .github {
       background-color: white;
       border-radius: 100%; }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .about-me--tools .about-me--technologies img {
+        width: 8rem;
+        height: 8rem; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .about-me--tools .about-me--technologies img {
+        width: 8rem;
+        height: 8rem;
+        margin-right: 2rem; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .about-me--tools .about-me--technologies {
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+        margin-bottom: 4rem; } }
+  @media (min-width: 851px) and (max-width: 1600px) {
+    .about-me--tools {
+      margin-top: 4rem; } }
 
-/******** PROJECTS *********/
 .projects {
   padding: 2.9rem 1.6rem 1.6rem;
   background-color: #000000; }
@@ -244,8 +341,12 @@ body {
     font-size: 2.8rem;
     font-style: italic;
     font-weight: bold;
+    text-transform: uppercase;
     color: white;
     text-align: center; }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .projects h3 {
+        margin-top: 6rem; } }
   .projects--description p {
     font-size: 2rem;
     text-align: center;
@@ -266,15 +367,40 @@ body {
       width: 18rem;
       height: 18rem;
       border-radius: 10%; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .projects--container .project--overview {
+          width: 25rem;
+          height: 25rem;
+          border-radius: 10%; } }
     .projects--container .project--name {
       margin-bottom: 0;
       font-size: 2rem;
       text-transform: uppercase;
       color: white; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .projects--container .project--name {
+          padding: 3rem;
+          font-size: 3rem; } }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .projects--container .project--name {
+          padding: 3rem;
+          font-size: 3rem; } }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .projects--container .project--technologies {
+        padding: 3rem; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .projects--container .project--technologies {
+        padding: 3rem; } }
     .projects--container .project--description {
       font-size: 1.5rem;
       text-align: center;
       color: white; }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .projects--container .project--description {
+          font-size: 2.2rem; } }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .projects--container .project--description {
+          font-size: 2.2rem; } }
     .projects--container .project--redirection {
       display: flex;
       justify-content: center;
@@ -297,6 +423,14 @@ body {
         .projects--container .project--redirection__live:active, .projects--container .project--redirection__live:hover {
           background-color: #3a62ff;
           color: white; }
+        @media (min-width: 500px) and (max-width: 850px) {
+          .projects--container .project--redirection__live {
+            padding: 1.5rem;
+            font-size: 1.5rem; } }
+        @media (min-width: 851px) and (max-width: 1600px) {
+          .projects--container .project--redirection__live {
+            padding: 1.5rem;
+            font-size: 1.5rem; } }
       .projects--container .project--redirection__code {
         display: inline-block;
         margin-right: 2rem;
@@ -314,6 +448,30 @@ body {
         .projects--container .project--redirection__code:active, .projects--container .project--redirection__code:hover {
           background-color: #3a62ff;
           color: white; }
+        @media (min-width: 500px) and (max-width: 850px) {
+          .projects--container .project--redirection__code {
+            padding: 1.5rem;
+            font-size: 1.5rem; } }
+        @media (min-width: 851px) and (max-width: 1600px) {
+          .projects--container .project--redirection__code {
+            padding: 1.5rem;
+            font-size: 1.5rem; } }
+      @media (min-width: 500px) and (max-width: 850px) {
+        .projects--container .project--redirection {
+          padding: 3rem; } }
+      @media (min-width: 851px) and (max-width: 1600px) {
+        .projects--container .project--redirection {
+          padding: 3rem; } }
+    @media (min-width: 500px) and (max-width: 850px) {
+      .projects--container {
+        margin: 4rem auto;
+        width: 60rem;
+        height: auto; } }
+    @media (min-width: 851px) and (max-width: 1600px) {
+      .projects--container {
+        width: 50rem;
+        height: 80rem;
+        margin: 4rem auto; } }
 
 .cta {
   margin: 0 auto;
@@ -340,6 +498,11 @@ body {
         align-items: center;
         justify-content: center;
         margin-top: 2rem; }
+        .cta--container .cta--media__links .github2 {
+          width: 3.2rem;
+          height: 3.2rem;
+          background-color: white;
+          border-radius: 100%; }
         .cta--container .cta--media__links a {
           text-decoration: none; }
           .cta--container .cta--media__links a .cta--media__redirection {

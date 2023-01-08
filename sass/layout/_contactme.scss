@@ -26,6 +26,12 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 2rem;
+                .github2 {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    background-color: $white;
+                    border-radius: 100%;
+                }
                 & a {
                     text-decoration: none;
                     .cta--media__redirection {

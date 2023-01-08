@@ -57,6 +57,9 @@
             text-align: center;
             color: white;
             text-transform: uppercase;
+            @include media(tablet) {
+                font-size: 2.5rem;
+            }
         }  
         .about-me--technologies {
             display: grid;
@@ -68,7 +71,27 @@
                 background-color: $white;
                 border-radius: 100%;
             }
+            img {
+                @include media(tablet) {
+                    width: 8rem;
+                    height: 8rem;
+                }
+                @include media(desktop) {
+                    width: 8rem;
+                    height: 8rem;
+                    margin-right: 2rem;
+                }
+            }
+            @include media(desktop) {
+                display: flex;
+                justify-content: center;
+                padding: 3rem;
+                margin-bottom: 4rem;
+            }
         }   
+        @include media(desktop) {
+            margin-top: 4rem;
+        }
     }
 }
 

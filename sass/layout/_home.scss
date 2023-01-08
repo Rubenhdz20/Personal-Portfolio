@@ -8,23 +8,48 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 32%;
+        top: 30%;
         left: 30%;
         h1 {
             font-size: 3.2rem;
             margin-bottom: 1rem;
             color: $white;
+            @include media(tablet) {
+                font-size: 5rem;
+            }
+            @include media(desktop) {
+                font-size: 6rem;
+            }
         }
-        
         h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: $white;
+            @include media(tablet) {
+                font-size: 3.5rem;
+            }
+            @include media(desktop) {
+                font-size: 4rem;
+            }
         }
         &__position {
             font-size: 2rem;
             color: $white;
+            @include media(tablet) {
+                font-size: 2.5rem;
+            }
+            @include media(desktop) {
+                font-size: 3rem;
+            }
         }
+        @include media(tablet) {
+            top: 40%;
+            left: 40%;
+        }
+        @include media(desktop) {
+            top: 25%;
+            left: 41.5%;
+        } 
     }
     .home--btns {
         position: absolute;
@@ -48,7 +73,19 @@
                 background-color: $btn-hover-blue;
                 color: $white;
             }
+            @include media(tablet) {
+                font-size: 1.7rem;
+                padding: 3rem;
+            }
         }
+        @include media(tablet) {
+            top: 80%;
+            left: 41%;
+        }
+        @include media(desktop) {
+            top: 70%;
+            left: 45.5%;
+        } 
     }
 }
 

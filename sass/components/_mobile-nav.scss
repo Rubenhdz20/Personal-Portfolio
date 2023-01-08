@@ -28,6 +28,9 @@
             transform-origin: 0px 100%;
             transition: all .3s;
         }
+        @include media(desktop) {
+            display: none;
+        }  
     }
     .background {
         height: 6rem;
@@ -36,45 +39,60 @@
         position: fixed;
         top: 1.5rem;
         right: 2.4rem;
-        background-image: radial-gradient(#000367 20%, #3a62ff);
+        background-image: $gradient-blue;
         -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1)
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        @include media(desktop) {
+            display: none;
+        }  
     }
+
     .nav {
         display: none;
-        .nav--list {
-            list-style: none;
-            .nav--item {
-                padding: 2rem;
-                text-align: center;
-                .nav--link:link,
-                .nav--link:visited {
-                    display: inline-block;
-                    padding: 1rem 2rem;
-                    font-size: 3rem;
-                    font-weight: 300;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: white;
-                    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-                    background-size: 225%;
-                    transition: all .2s;
-                    
-                    &:hover,
-                    &:active {
-                        color: #005bc9;
-                        background-position: 100%;
-                        transform: translateX(1rem);
-                    }
-                }
-    
-            }
-        }
+        transition: all .2s;
+        @include media(desktop) {
+            display: none;
+        }  
     }    
 }
 
+.nav--link:link,
+.nav--link:visited {
+    display: inline-block;
+    padding: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-image: $gradient-transparent;
+    background-size: 225%;
+    transition: all .2s;
+    @include media(tablet) {
+        font-size: 5rem;
+	}
+    @include media(desktop) {
+        font-size: 2rem;
+        background-image: $gradient-transparent;
+    }
+}
+
+.nav--link:hover,
+.nav--link:active {
+    color: $blue;
+    background-position: 100%;
+    transform: translateX(1rem);
+}
+
+.nav--list {
+    list-style: none;
+    @include media(desktop) {
+        display: flex;
+        list-style: none;
+    }  
+}
 
 .activebars-menu-1 {
     transform: rotate(45deg) translate(1px, -8px);
@@ -96,6 +114,9 @@
 
 .nav2 {
     display: none;
+    @include media(desktop) {
+        display: flex;
+    }  
 }
 
 .active-navigation-nav {
@@ -104,5 +125,12 @@
     top: 21rem;
     left: 9rem;
     text-align: center;
-    transition: all .5s;
+    transition: all .2s;
+    @include media(tablet) {
+        top: 33rem;
+        left: 26rem;
+	}
+    @include media(desktop) {
+        display: none;
+    }  
 }
