@@ -1,0 +1,67 @@
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .home--titles {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 32%;
+        left: 30%;
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            color: $white;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: $white;
+        }
+        &__position {
+            font-size: 2rem;
+            color: $white;
+        }
+    }
+    .home--btns {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 70%;
+        left: 35%;
+        .btn--download {
+            padding: 1.5rem;
+            border-radius: 11px;
+            border: none;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $dark;
+            cursor: pointer;
+            box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+            -moz-box-shadow: -8px 10px 32px 4px rgba(0,0,0,0.75);
+            &:active,
+            &:hover {
+                background-color: $btn-hover-blue;
+                color: $white;
+            }
+        }
+    }
+}
+
+.position {
+    margin-bottom: 1rem;
+    color: $white;
+}
+
+.roll {
+    font-size: 2rem;
+}
+
+.action-btns {
+    display: flex;
+    justify-content: space-between;
+}

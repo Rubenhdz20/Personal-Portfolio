@@ -4,7 +4,8 @@
   "description": "convirtiendo a SASS",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass":"node-sass sass/main.scss css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Rubenhdz20/Personal-Portfolio/issues"
   },
-  "homepage": "https://github.com/Rubenhdz20/Personal-Portfolio#readme"
+  "homepage": "https://github.com/Rubenhdz20/Personal-Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
 }

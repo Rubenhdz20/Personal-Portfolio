@@ -57,7 +57,7 @@ Solo se aplicarán entre los tamaños indicados */
         font-size: 2.5rem;
     }
 
-    .about-me--technologies-container img {
+    .about-me--technologies img {
         width: 8rem;
         height: 8rem;
     }
@@ -179,13 +179,13 @@ Solo se aplicarán entre los tamaños indicados */
         font-size: 3.5rem;
     }
 
-    .about-me--technologies-container {
+    .about-me--technologies {
         display: flex;
         justify-content: center;
         padding: 3rem;
     }
 
-    .about-me--technologies-container img {
+    .about-me--technologies img {
         width: 8rem;
         height: 8rem;
         margin-right: 2rem;

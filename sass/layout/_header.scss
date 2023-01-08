@@ -1,0 +1,25 @@
+
+.header {
+    width: 100%;
+    background-color: $dark;
+    border-bottom: #222426;
+    z-index: 1;
+    .header--brand-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 1.2rem 1.6rem;
+        p {
+            font-size: 2rem;
+            color: $white;
+        }   
+    }   
+}
+
+
