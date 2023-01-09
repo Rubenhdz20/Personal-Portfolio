@@ -12,7 +12,7 @@ html {
 
 body {
   scroll-behavior: smooth;
-  overflow: scroll;
+  overflow-x: hidden;
   font-family: 'Noto Serif Georgian', serif;
   font-family: 'Red Hat Text', sans-serif; }
 
@@ -78,7 +78,7 @@ body {
   display: flex;
   justify-content: center; }
   .nav--item .emoji {
-    width: 24rem;
+    width: 26rem;
     height: 9rem; }
     @media (min-width: 500px) and (max-width: 850px) {
       .nav--item .emoji {
