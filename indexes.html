@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@500&family=Red+Hat+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0d60d4e27.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href=https://img.icons8.com/external-justicon-flat-justicon/2x/external-sea-landscape-justicon-flat-justicon-1.png>
@@ -66,26 +67,26 @@
     </header>
 
     <section id="front-page" class="home">
-        <div class="home--titles">
+        <div class="home--titles" data-aos="fade-right">
             <h1>Bienvenido!</h1>
             <h2>Soy Ruben</h2>
             <p class="home--titles__position">Frontend Developer</p> 
         </div>
        
-        <div class="home--btns">
+        <div class="home--btns" data-aos="fade-left">
             <a href="/pdf/cv.pdf" download="CV_FrontendDeveloper_Ruben Hernandez Alvarado"><button class="btn--download">Descarga CV</button></a> 
         </div>
     </section>
 
     <section id="about" class="about-me">
-        <h2 class="about-me--title">Quien soy?</h2>
+        <h2 class="about-me--title" data-aos="fade-down">Quien soy?</h2>
 
         <figure class="about-me--img">
-            <img class="about-me--avatar" src="/img/ProfilePic.png" alt="Profile Picture">
+            <img class="about-me--avatar" src="/img/ProfilePic.png" alt="Profile Picture" data-aos="fade-down">
             <figcaption class="about-me--caption">RUBDEV</figcaption>
         </figure>
 
-        <div class="about-me--description">
+        <div class="about-me--description" data-aos="fade-right">
             <p>
                 La tecnología ha cambiado nuestras vidas para siempre, ¿quién se imaginaría dónde estamos ahora?<br>Gracias por estar aquí, mi nombre es Ruben, soy un programador curioso y optimista, me encanta crear para la web, desde planificar, diseñar y hacerlo realidad a través del código.</p>
             <br>
@@ -93,9 +94,9 @@
         </div>
 
         <div class="about-me--tools">
-            <h3>Tecnologías</h3>
+            <h3 data-aos="zoom-in-up">Tecnologías</h3>
 
-            <figure class="about-me--technologies">
+            <figure class="about-me--technologies" data-aos="zoom-in-up">
                 <img src="/img/HTML.png" alt="Html">
                 <img src="/img/CSS.png" alt="Css">
                 <img src="/img/Sass.png" alt="Sass">
@@ -109,13 +110,13 @@
     </section>
 
     <section id="projects" class="projects">
-        <h3>Proyectos</h3>
+        <h3 data-aos="fade-down">Proyectos</h3>
 
-        <div class="projects--description">
+        <div class="projects--description" data-aos="fade-right">
             <p>Dicen que la práctica hace al maestro, no podría estar más de acuerdo, al crear estos proyectos pude entender, aprender, fallar, levantarme e intentarlo de nuevo.<br>Aprender detrás cómo funciona cada tecnología me hizo comprender lo poderoso que es la programación, aquí hay algunos proyectos creados con amor, para cuando estés leyendo esto, ¡estaré creando más!</p>
         </div>
 
-        <div class="projects--container">
+        <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/VideoGame.png" alt="First Project">
 
             <p class="project--name">VideoJuego de Surf</p>
@@ -132,12 +133,12 @@
             </p>
 
             <div class="project--redirection">
-                <a class="project--redirection__live" href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer">Vista en vivo</a></button>
-                <a class="project--redirection__code" href="https://github.com/Rubenhdz20/VideoGameJS" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
+                <a id="light" class="project--redirection__live" href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer">Vista en vivo</a></button>
+                <a id="code1" class="project--redirection__code" href="https://github.com/Rubenhdz20/VideoGameJS" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
             </div>
         </div>
 
-        <div class="projects--container">
+        <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/Analysis.png" alt="First Project">
 
             <p class="project--name">Análisis de Salario</p>
@@ -154,12 +155,12 @@
             </p>
 
             <div class="project--redirection">
-                <a class="project--redirection__live" href="https://salary-analisis.netlify.app" target="_blank" rel="noopener noreferrer">Vista en vivo</a></button>
-                <a class="project--redirection__code" href="https://github.com/Rubenhdz20/Salary-Analysis" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
+                <a id="light2" class="project--redirection__live" href="https://salary-analisis.netlify.app" target="_blank" rel="noopener noreferrer">Vista en vivo</a></button>
+                <a id="code2" class="project--redirection__code" href="https://github.com/Rubenhdz20/Salary-Analysis" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
             </div>
         </div>
 
-        <div class="projects--container">
+        <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/Yardsale.png" alt="First Project">
             
             <p class="project--name">Yardsale</p>
@@ -176,12 +177,12 @@
             </p>
 
             <div class="project--redirection">
-                <a class="project--redirection__live" href="https://yard-sale-web.netlify.app" target="_blank" rel="noopener noreferrer">Vista en Vivo</a></button>
-                <a class="project--redirection__code" href="https://github.com/Rubenhdz20/YardSale" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
+                <a id="light3" class="project--redirection__live" href="https://yard-sale-web.netlify.app" target="_blank" rel="noopener noreferrer">Vista en Vivo</a></button>
+                <a id="code3" class="project--redirection__code" href="https://github.com/Rubenhdz20/YardSale" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
             </div>
         </div>
 
-        <div class="projects--container">
+        <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/Omnifood.png" alt="First Project">
 
             <p class="project--name">Omnifood</p>
@@ -198,8 +199,8 @@
             </p>
 
             <div class="project--redirection">
-                <a class="project--redirection__live" href="https://omnifood-aiweb.netlify.app" target="_blank" rel="noopener noreferrer">Vista en Vivo</a></button>
-                <a class="project--redirection__code" href="https://github.com/Rubenhdz20/Omnifood-Project" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
+                <a id="light4" class="project--redirection__live" href="https://omnifood-aiweb.netlify.app" target="_blank" rel="noopener noreferrer">Vista en Vivo</a></button>
+                <a id="code4" class="project--redirection__code" href="https://github.com/Rubenhdz20/Omnifood-Project" target="_blank" rel="noopener noreferrer">Descubre el código</a></button>
             </div>
         </div>
     </section>
@@ -212,25 +213,25 @@
                 <li class="cta--media__links">
                     <span><img src="/img/linkedin.png" alt="LinkedIn-Logo"></span>
                     <div>
-                        <a href="https://www.linkedin.com/in/ruben-hernandez-alvarado/" target="_blank" rel="noopener noreferrer"><p class="cta--media__redirection">LinkedIn</p></a>
+                        <a  href="https://www.linkedin.com/in/ruben-hernandez-alvarado/" target="_blank" rel="noopener noreferrer"><p id="linked" class="cta--media__redirection">LinkedIn</p></a>
                     </div>
                 </li>
                 <li class="cta--media__links">
                     <span><img class="github2" src="/img/Github.png" alt="Github-Logo"></span>
                     <div>
-                        <a href="https://github.com/Rubenhdz20" target="_blank" rel="noopener noreferrer"><p class="cta--media__redirection">Github</p></a>
+                        <a href="https://github.com/Rubenhdz20" target="_blank" rel="noopener noreferrer"><p id="linked2" class="cta--media__redirection">Github</p></a>
                     </div>
                 </li>
                 <li class="cta--media__links">
                     <span><img src="/img/twitter1.png" alt="Twitter-Logo"></span>
                     <div>
-                        <a href="https://twitter.com/rubenhernande90" target="_blank" rel="noopener noreferrer"><p class="cta--media__redirection">Twitter</p></a>
+                        <a href="https://twitter.com/rubenhernande90" target="_blank" rel="noopener noreferrer"><p id="linked3" class="cta--media__redirection">Twitter</p></a>
                     </div>
                 </li>
                 <li class="cta--media__links">
                     <span><img src="/img/gmail.png" alt="Gmail-Logo"></span>
                     <div>
-                        <a href="mailto:rubhernandez42@gmail.com"><p class="cta--media__redirection">rubhernandez42@gmail.com</p></a>
+                        <a href="mailto:rubhernandez42@gmail.com"><p id="linked4"class="cta--media__redirection">rubhernandez42@gmail.com</p></a>
                     </div>
                 </li>
             </ul>
@@ -239,6 +240,13 @@
     </section>
 
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
