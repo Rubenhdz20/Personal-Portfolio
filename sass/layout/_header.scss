@@ -4,28 +4,127 @@
     background-color: $dark;
     border-bottom: #222426;
     z-index: 1;
+    transition: .3s ease all;
+    color: $white;
+    &.light {
+        background-color: $white;
+        color: rgb(0, 0, 0);
+    }
     .header--brand-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         padding: 1.2rem 1.6rem;
         p {
             font-size: 2rem;
-            color: $white;
+            // color: rgb(173, 173, 173);
+            transition: all .2s;
+            &:hover,
+            &:active {
+                color: $blue;
+                background-position: 100%;
+                background-image: $gradient-transparent;
+                background-size: 225%;
+                transform: translateX(1rem);
+            }
             @include media(desktop) {
                 margin-left: 1rem;
             } 
         } 
         @include media(desktop) {
             padding: 0rem;
+            align-items: center;
+            justify-content: space-between;
         } 
-    }    
+    }
+    &--switch {
+        margin-left: 5rem;
+        .en,
+        .es {
+            color: $white;
+        }
+        .spain,
+        .english {
+            width: 2rem;
+            height: 2rem;
+        }
+        .check {
+            position: relative;
+            top: -0.5rem;
+            width: 5rem;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5rem;
+                height: 1.5rem;
+                background-color: #333;
+                border-radius: 2.5rem;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 2.5rem;
+                height: 1.5rem;
+                background-color: $white;
+                border-radius: 2.5rem;
+                transition: 0.25s;
+                border: 2px solid #333;
+                box-sizing: border-box;
+            }
+            &:checked::after {
+                left: 2.5rem;
+                border: 2px solid $blue;
+            }
+            &:checked::before {
+                background-color: $blue;
+            }
+        }
+    }
+    &--dark-mode {
+        display: flex;
+        position: relative;
+        margin-left: 3rem;
+        background: rgb(255, 179, 37);
+        border-radius: 100rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            top: 0;
+            left: 0;
+            right: unset;
+            background: $white;
+            border-radius: 10rem;
+            transition: .3s ease all;
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+        }
+        &.active {
+            background-color: #343D5B;
+            color: $white;
+            &::after {
+                right: 0;
+                left: unset;
+            }
+        }
+        span {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            background: none;
+            color: $white;
+        }
+    }
 }
 
 

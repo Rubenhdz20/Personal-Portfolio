@@ -2,13 +2,17 @@
 .cta {
     margin: 0 auto;
     padding:  1.6rem 1.6rem;
+    color: $white;
     background-color: $dark;
+    &.light {
+        color: black;
+        background-color: white;
+    }
     &--title {
         margin-top: 5rem;
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
-        color: $white;
     }
 
     &--container {
@@ -39,7 +43,10 @@
                         font-size: 2rem;
                         line-height: 1;
                         border: none;
-                        color: $white;
+                        color: white;
+                        &.light {
+                            color: black;
+                        }
                         &:hover,
                         &:active {
                             color: $links-color;
@@ -55,7 +62,6 @@
         font-size: 1rem;
         text-align: center;
         text-transform: uppercase;
-        color: white;
     }
 }
 
