@@ -139,8 +139,8 @@ body {
 
 .active-navigation-nav {
   position: fixed;
-  top: 13rem;
-  left: 5rem;
+  top: 21rem;
+  left: 9rem;
   text-align: center;
   transition: all .2s; }
   @media (min-width: 500px) and (max-width: 850px) {
