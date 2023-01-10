@@ -1,11 +1,12 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
-    scroll-behavior: smooth;
-    overflow-x: hidden; 
     font-family: 'Noto Serif Georgian', serif;
     font-family: 'Red Hat Text', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
 }

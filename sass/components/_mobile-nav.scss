@@ -74,8 +74,8 @@
     display: flex;
     justify-content: center;
     .emoji {
-        width: 26rem;
-        height: 9rem;
+        width: 14rem;
+        height: 8rem;
         @include media(tablet) {
            width: 82rem;
         }
@@ -141,8 +141,8 @@
 
 .active-navigation-nav {
     position: fixed;
-    top: 5rem;
-    left: 0rem;
+    top: 13rem;
+    left: 5rem;
     text-align: center;
     transition: all .2s;
     @include media(tablet) {
