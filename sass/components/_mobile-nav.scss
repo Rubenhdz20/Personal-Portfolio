@@ -28,9 +28,12 @@
             transform-origin: 0px 100%;
             transition: all .3s;
         }
+        @include media(desktop-s) {
+            display: none;
+        }
         @include media(desktop) {
             display: none;
-        }   
+        } 
     }
     .background {
         height: 6rem;
@@ -44,6 +47,9 @@
         // transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         // transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         transition: all .8s;
+        @include media(desktop-s) {
+            display: none;
+        }
         @include media(desktop) {
             display: none;
         }  
@@ -51,9 +57,12 @@
 
     .nav {
         display: none;
+        @include media(desktop-s) {
+            display: none;
+        }
         @include media(desktop) {
             display: none;
-        }  
+        } 
     }    
 }
 
@@ -63,11 +72,16 @@
     align-items: center;
     justify-content: center;
     list-style: none;
-    @include media(desktop) {
+    @include media(desktop-s) {
         display: flex;
         flex-direction: row;
         list-style: none;
     }  
+    @include media(desktop) {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    } 
 }
 
 .nav--item {
@@ -97,10 +111,15 @@
     @include media(tablet) {
         font-size: 5rem;
 	}
-    @include media(desktop) {
+    @include media(desktop-s) {
+        color: #8ca7ff;
         font-size: 2rem;
         background-image: $gradient-transparent;
-        color: rgb(50, 50, 50);
+    }
+    @include media(desktop) {
+        color: #8ca7ff;
+        font-size: 2rem;
+        background-image: $gradient-transparent;
     }
 }
 
@@ -134,9 +153,12 @@
 
 .nav2 {
     display: none;
-    @include media(desktop) {
+    @include media(desktop-s) {
         display: flex;
     }  
+    @include media(desktop) {
+        display: flex;
+    } 
 }
 
 .active-navigation-nav {
@@ -146,10 +168,13 @@
     text-align: center;
     transition: all .2s;
     @include media(tablet) {
-        top: 15rem;
-        right: -1rem;
+        top: 28rem;
+        right: 7rem;
 	}
-    @include media(desktop) {
+    @include media(desktop-s) {
         display: none;
     }  
+    @include media(desktop) {
+        display: none;
+    } 
 }

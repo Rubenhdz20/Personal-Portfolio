@@ -48,8 +48,13 @@
     &--description {
         margin-top: 2rem;
         & p {
+            max-width: 75ch;
             font-size: 2rem;
             text-align: center;
+            line-height: 1.5;
+        }
+        @include media(desktop) {
+            margin-left: 20rem;
         }
     }
     &--tools {
@@ -77,11 +82,22 @@
                     width: 8rem;
                     height: 8rem;
                 }
+                @include media(desktop-s) {
+                    width: 8rem;
+                    height: 8rem;
+                    margin-right: 2rem;
+                }
                 @include media(desktop) {
                     width: 8rem;
                     height: 8rem;
                     margin-right: 2rem;
                 }
+            }
+            @include media(desktop-s) {
+                display: flex;
+                justify-content: center;
+                padding: 3rem;
+                margin-bottom: 4rem;
             }
             @include media(desktop) {
                 display: flex;
@@ -90,6 +106,9 @@
                 margin-bottom: 4rem;
             }
         }   
+        @include media(desktop-s) {
+            margin-top: 4rem;
+        }
         @include media(desktop) {
             margin-top: 4rem;
         }

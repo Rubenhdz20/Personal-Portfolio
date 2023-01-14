@@ -13,14 +13,23 @@
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
-        @include media(desktop) {
+        @include media(desktop-s) {
             margin-top: 6rem;;
         }
     }
-    &--description p {
-        font-size: 2rem;
-        text-align: center;
+
+    &--description {
+        p {
+            max-width: 75ch;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+        @include media(desktop) {
+            margin-left: 20rem;
+        }
     }
+         
     &--container {
         display: grid;
         justify-items: center;
@@ -53,6 +62,10 @@
                 padding: 3rem;
                 font-size: 3rem;
             }
+            @include media(desktop-s) {
+                padding: 3rem;
+                font-size: 3rem;
+            }
             @include media(desktop) {
                 padding: 3rem;
                 font-size: 3rem;
@@ -63,19 +76,50 @@
             @include media(tablet) {
                 padding: 3rem;
             }
+            @include media(desktop-s) {
+                padding: 0rem;
+            }
             @include media(desktop) {
                 padding: 0rem;
             }
         }
 
         .project--description {
+            max-width: 75ch;
             font-size: 1.5rem;
             text-align: center;
+            line-height: 1.5;
             @include media(tablet) {
                 font-size: 2.2rem;
+                line-height: 1.5;
+            }
+            @include media(desktop-s) {
+                font-size: 2.2rem;
+                line-height: 1.5;
             }
             @include media(desktop) {
                 font-size: 2.2rem;
+                line-height: 1.5;
+            }
+        }
+
+        .project--credits {
+            max-width: 75ch;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 1.5;
+            @include media(tablet) {
+                margin-top: 2rem;
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+            @include media(desktop-s) {
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+            @include media(desktop) {
+                font-size: 2rem;
+                line-height: 1.5;
             }
         }
 
@@ -115,6 +159,10 @@
                     font-size: 1.5rem;
                 }
 
+                @include media(desktop-s) {
+                    padding: 1.5rem;
+                    font-size: 1.5rem;
+                }
                 @include media(desktop) {
                     padding: 1.5rem;
                     font-size: 1.5rem;
@@ -150,6 +198,10 @@
                     font-size: 1.5rem;
                 }
 
+                @include media(desktop-s) {
+                    padding: 1.5rem;
+                    font-size: 1.5rem;
+                }
                 @include media(desktop) {
                     padding: 1.5rem;
                     font-size: 1.5rem;
@@ -158,6 +210,10 @@
 
             @include media(tablet) {
                 padding: 3rem;
+            }
+
+            @include media(desktop-s) {
+                padding: 0rem;
             }
 
             @include media(desktop) {
@@ -169,6 +225,12 @@
             margin: 4rem auto;
             width: 60rem;
             height: auto;
+        }
+
+        @include media(desktop-s) {
+            width: 50rem;
+            height: 80rem;
+            margin: 4rem auto;
         }
 
         @include media(desktop) {

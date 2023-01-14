@@ -66,7 +66,7 @@ allLinks.forEach(function (link) {
 function changeLanguage() {
   const id = check.checked;
   if(id == true) {
-    location.href = "indexes.html"
+    location.href = "indice.html"
   }
   else {
     location.href = "index.html"
