@@ -163,8 +163,8 @@ body {
 .active-navigation-nav {
   position: fixed;
   top: 20rem;
-  left: 9rem;
-  right: calc(7rem);
+  left: 8rem;
+  right: calc(8rem);
   text-align: center;
   transition: all .2s; }
   @media (min-width: 576px) and (max-width: 850px) {
