@@ -162,7 +162,7 @@ body {
 
 .active-navigation-nav {
   position: fixed;
-  top: 25rem;
+  top: 20rem;
   left: 9rem;
   right: calc(7rem);
   text-align: center;
