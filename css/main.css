@@ -95,7 +95,7 @@ body {
   .nav--item .emoji {
     width: 14rem;
     height: 8rem; }
-    @media (min-width: 500px) and (max-width: 850px) {
+    @media (min-width: 576px) and (max-width: 850px) {
       .nav--item .emoji {
         width: 82rem; } }
 
@@ -111,7 +111,7 @@ body {
   background-image: linear-gradient(80deg, transparent 0%, transparent 50%, white 50%);
   background-size: 225%;
   transition: all .2s; }
-  @media (min-width: 500px) and (max-width: 850px) {
+  @media (min-width: 576px) and (max-width: 850px) {
     .nav--link:link,
     .nav--link:visited {
       font-size: 5rem; } }
@@ -146,7 +146,7 @@ body {
 
 .scale {
   transform: scale(50); }
-  @media (min-width: 500px) and (max-width: 850px) {
+  @media (min-width: 576px) and (max-width: 850px) {
     .scale {
       transition: all .4s;
       transform: scale(90); } }
@@ -162,14 +162,16 @@ body {
 
 .active-navigation-nav {
   position: fixed;
-  top: 21rem;
+  top: 25rem;
   left: 9rem;
+  right: calc(7rem);
   text-align: center;
   transition: all .2s; }
-  @media (min-width: 500px) and (max-width: 850px) {
+  @media (min-width: 576px) and (max-width: 850px) {
     .active-navigation-nav {
-      top: 28rem;
-      right: 7rem; } }
+      top: 21rem;
+      right: 7rem;
+      left: calc(11rem); } }
   @media (min-width: 851px) and (max-width: 1200px) {
     .active-navigation-nav {
       display: none; } }
@@ -287,16 +289,13 @@ body {
       color: white; }
 
 .home {
-  position: relative;
+  display: grid;
   width: 100%;
   height: 100vh; }
   .home .home--titles {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 30%;
-    left: 30%;
+    display: grid;
+    place-content: center;
+    text-align: center;
     color: white;
     transition: .3s ease all; }
     .home .home--titles.light {
@@ -305,7 +304,7 @@ body {
     .home .home--titles h1 {
       font-size: 3.2rem;
       margin-bottom: 1rem; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .home .home--titles h1 {
           font-size: 5rem; } }
       @media (min-width: 851px) and (max-width: 1200px) {
@@ -317,7 +316,7 @@ body {
     .home .home--titles h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .home .home--titles h2 {
           font-size: 3.5rem; } }
       @media (min-width: 851px) and (max-width: 1200px) {
@@ -328,7 +327,7 @@ body {
           font-size: 4rem; } }
     .home .home--titles__position {
       font-size: 2rem; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .home .home--titles__position {
           font-size: 2.5rem; } }
       @media (min-width: 851px) and (max-width: 1200px) {
@@ -337,26 +336,12 @@ body {
       @media (min-width: 1200px) and (max-width: 1600px) {
         .home .home--titles__position {
           font-size: 3rem; } }
-    @media (min-width: 500px) and (max-width: 850px) {
-      .home .home--titles {
-        top: 35%;
-        left: 38%; } }
-    @media (min-width: 851px) and (max-width: 1200px) {
-      .home .home--titles {
-        top: 20%;
-        left: 38%; } }
-    @media (min-width: 1200px) and (max-width: 1600px) {
-      .home .home--titles {
-        top: 20%;
-        left: 41%; } }
   .home .home--btns {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 70%;
-    left: 39%; }
+    display: grid;
+    place-content: center; }
     .home .home--btns .btn--download {
-      padding: 1.5rem;
+      padding: 2rem;
+      font-size: 1.2rem;
       border-radius: 11px;
       border: none;
       text-transform: uppercase;
@@ -372,22 +357,18 @@ body {
       .home .home--btns .btn--download:active, .home .home--btns .btn--download:hover {
         background-color: #3a62ff;
         color: white; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .home .home--btns .btn--download {
           font-size: 1.7rem;
-          padding: 3rem; } }
-    @media (min-width: 500px) and (max-width: 850px) {
-      .home .home--btns {
-        top: 80%;
-        left: 40%; } }
-    @media (min-width: 851px) and (max-width: 1200px) {
-      .home .home--btns {
-        top: 70%;
-        left: 45%; } }
-    @media (min-width: 1200px) and (max-width: 1600px) {
-      .home .home--btns {
-        top: 70%;
-        left: 46%; } }
+          padding: 2.5rem; } }
+      @media (min-width: 851px) and (max-width: 1200px) {
+        .home .home--btns .btn--download {
+          font-size: 1.7rem;
+          padding: 2.5rem; } }
+      @media (min-width: 1200px) and (max-width: 1600px) {
+        .home .home--btns .btn--download {
+          font-size: 1.7rem;
+          padding: 2.5rem; } }
 
 .position {
   margin-bottom: 1rem;
@@ -446,6 +427,12 @@ body {
       font-size: 2rem;
       text-align: center;
       line-height: 1.5; }
+    @media (min-width: 851px) and (max-width: 1200px) {
+      .about-me--description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     @media (min-width: 1200px) and (max-width: 1600px) {
       .about-me--description {
         display: flex;
@@ -457,7 +444,7 @@ body {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase; }
-    @media (min-width: 500px) and (max-width: 850px) {
+    @media (min-width: 576px) and (max-width: 850px) {
       .about-me--tools h3 {
         font-size: 2.5rem; } }
   .about-me--tools .about-me--technologies {
@@ -469,7 +456,7 @@ body {
     .about-me--tools .about-me--technologies .github {
       background-color: white;
       border-radius: 100%; }
-    @media (min-width: 500px) and (max-width: 850px) {
+    @media (min-width: 576px) and (max-width: 850px) {
       .about-me--tools .about-me--technologies img {
         width: 8rem;
         height: 8rem; } }
@@ -524,6 +511,12 @@ body {
     font-size: 2rem;
     text-align: center;
     line-height: 1.5; }
+  @media (min-width: 851px) and (max-width: 1200px) {
+    .projects--description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
   @media (min-width: 1200px) and (max-width: 1600px) {
     .projects--description {
       display: flex;
@@ -546,7 +539,7 @@ body {
       width: 18rem;
       height: 18rem;
       border-radius: 10%; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--overview {
           width: 25rem;
           height: 25rem;
@@ -555,7 +548,7 @@ body {
       margin-bottom: 0;
       font-size: 2rem;
       text-transform: uppercase; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--name {
           padding: 3rem;
           font-size: 3rem; } }
@@ -567,7 +560,7 @@ body {
         .projects--container .project--name {
           padding: 3rem;
           font-size: 3rem; } }
-    @media (min-width: 500px) and (max-width: 850px) {
+    @media (min-width: 576px) and (max-width: 850px) {
       .projects--container .project--technologies {
         padding: 3rem; } }
     @media (min-width: 851px) and (max-width: 1200px) {
@@ -581,7 +574,7 @@ body {
       font-size: 1.5rem;
       text-align: center;
       line-height: 1.5; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--description {
           font-size: 2.2rem;
           line-height: 1.5; } }
@@ -598,7 +591,7 @@ body {
       font-size: 1.5rem;
       text-align: center;
       line-height: 1.5; }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--credits {
           margin-top: 2rem;
           font-size: 2rem;
@@ -636,7 +629,7 @@ body {
         .projects--container .project--redirection__live:active, .projects--container .project--redirection__live:hover {
           background-color: #3a62ff;
           color: white; }
-        @media (min-width: 500px) and (max-width: 850px) {
+        @media (min-width: 576px) and (max-width: 850px) {
           .projects--container .project--redirection__live {
             padding: 1.5rem;
             font-size: 1.5rem; } }
@@ -668,7 +661,7 @@ body {
         .projects--container .project--redirection__code:active, .projects--container .project--redirection__code:hover {
           background-color: #3a62ff;
           color: white; }
-        @media (min-width: 500px) and (max-width: 850px) {
+        @media (min-width: 576px) and (max-width: 850px) {
           .projects--container .project--redirection__code {
             padding: 1.5rem;
             font-size: 1.5rem; } }
@@ -680,7 +673,7 @@ body {
           .projects--container .project--redirection__code {
             padding: 1.5rem;
             font-size: 1.5rem; } }
-      @media (min-width: 500px) and (max-width: 850px) {
+      @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--redirection {
           padding: 3rem; } }
       @media (min-width: 851px) and (max-width: 1200px) {
@@ -689,7 +682,7 @@ body {
       @media (min-width: 1200px) and (max-width: 1600px) {
         .projects--container .project--redirection {
           padding: 0rem; } }
-    @media (min-width: 500px) and (max-width: 850px) {
+    @media (min-width: 576px) and (max-width: 850px) {
       .projects--container {
         margin: 4rem auto;
         width: 60rem;

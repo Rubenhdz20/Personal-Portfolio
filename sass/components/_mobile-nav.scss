@@ -163,13 +163,15 @@
 
 .active-navigation-nav {
     position: fixed;
-    top: 21rem;
+    top: 25rem;
     left: 9rem;
+    right: calc(7rem);
     text-align: center;
     transition: all .2s;
     @include media(tablet) {
-        top: 28rem;
+        top: 21rem;
         right: 7rem;
+        left: calc(11rem);
 	}
     @include media(desktop-s) {
         display: none;

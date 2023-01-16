@@ -5,7 +5,7 @@
 @mixin media ($breakpoint) {  
 
     @if $breakpoint == tablet {  
-     @media(min-width: 500px) and (max-width: 850px) { @content; }  
+     @media(min-width: 576px) and (max-width: 850px) { @content; }  
     }  
 
     @else if $breakpoint == desktop-s {  

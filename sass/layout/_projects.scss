@@ -25,6 +25,12 @@
             text-align: center;
             line-height: 1.5;
         }
+        @include media(desktop-s) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         @include media(desktop) {
             display: flex;
             flex-direction: column;
