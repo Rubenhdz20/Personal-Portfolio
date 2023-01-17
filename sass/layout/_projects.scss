@@ -53,12 +53,10 @@
         -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.13);
 
         .project--overview {
-            width: 18rem;
-            height: 18rem;
+            width: 45%;
             border-radius: 10%;
             @include media(tablet) {
-                width: 25rem;
-                height: 25rem;
+                width: 45%;
                 border-radius: 10%;
             }
         }
@@ -146,7 +144,7 @@
                 border: none;
                 text-transform: uppercase;
                 text-decoration: none;
-                background-color: $dark;
+                background-color: rgba(0, 0, 0, 0.804);
                 color: $white;
                 cursor: pointer;
                 box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);
@@ -186,7 +184,7 @@
                 border: none;
                 text-transform: uppercase;
                 text-decoration: none;
-                background-color: $dark;
+                background-color: rgba(0, 0, 0, 0.833);
                 color: $white;
                 cursor: pointer;
                 box-shadow: -2px 6px 14px 5px rgba(0,0,0,0.75);

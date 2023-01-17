@@ -28,7 +28,7 @@ body {
     height: 7rem;
     background-image: radial-gradient(#000367 20%, #3a62ff);
     border-radius: 50%;
-    box-shadow: 0 1rem 3rem #000000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.943);
     cursor: pointer;
     z-index: 200; }
     .navigation .header--mobile-menu span:first-child {
@@ -39,7 +39,7 @@ body {
       margin-left: 1.1rem;
       width: 70%;
       height: 2px;
-      background-color: #000000;
+      background-color: rgba(0, 0, 0, 0.943);
       transform-origin: 0px 100%;
       transition: all .3s; }
     @media (min-width: 851px) and (max-width: 1200px) {
@@ -181,7 +181,7 @@ body {
 
 .header {
   width: 100%;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.943);
   border-bottom: #222426;
   z-index: 1;
   transition: .3s ease all;
@@ -346,7 +346,7 @@ body {
       border: none;
       text-transform: uppercase;
       color: white;
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.789);
       cursor: pointer;
       box-shadow: -8px 10px 32px 4px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: -8px 10px 32px 4px rgba(0, 0, 0, 0.75);
@@ -383,7 +383,7 @@ body {
 
 .about-me {
   padding: 2.9rem 1.6rem 1.6rem;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.943);
   color: white; }
   .about-me.light {
     background-color: white;
@@ -415,7 +415,7 @@ body {
       text-align: center;
       text-transform: uppercase;
       opacity: 0;
-      color: #000000;
+      color: rgba(0, 0, 0, 0.943);
       backface-visibility: hidden;
       transition: all .3s; }
       .about-me--img .about-me--caption:hover {
@@ -453,9 +453,6 @@ body {
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     margin-top: 4rem; }
-    .about-me--tools .about-me--technologies .github {
-      background-color: white;
-      border-radius: 100%; }
     @media (min-width: 576px) and (max-width: 850px) {
       .about-me--tools .about-me--technologies img {
         width: 8rem;
@@ -491,7 +488,7 @@ body {
 
 .projects {
   padding: 2.9rem 1.6rem 1.6rem;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.943);
   color: white; }
   .projects.light {
     background-color: white;
@@ -536,13 +533,11 @@ body {
     -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.13);
     -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.13); }
     .projects--container .project--overview {
-      width: 18rem;
-      height: 18rem;
+      width: 45%;
       border-radius: 10%; }
       @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--overview {
-          width: 25rem;
-          height: 25rem;
+          width: 45%;
           border-radius: 10%; } }
     .projects--container .project--name {
       margin-bottom: 0;
@@ -617,7 +612,7 @@ body {
         border: none;
         text-transform: uppercase;
         text-decoration: none;
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.804);
         color: white;
         cursor: pointer;
         box-shadow: -2px 6px 14px 5px rgba(0, 0, 0, 0.75);
@@ -649,7 +644,7 @@ body {
         border: none;
         text-transform: uppercase;
         text-decoration: none;
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.833);
         color: white;
         cursor: pointer;
         box-shadow: -2px 6px 14px 5px rgba(0, 0, 0, 0.75);
@@ -702,7 +697,7 @@ body {
   margin: 0 auto;
   padding: 1.6rem 1.6rem;
   color: white;
-  background-color: #000000; }
+  background-color: rgba(0, 0, 0, 0.943); }
   .cta.light {
     color: black;
     background-color: white; }
@@ -727,8 +722,7 @@ body {
         justify-content: center;
         margin-top: 2rem; }
         .cta--container .cta--media__links .github2 {
-          width: 3.2rem;
-          height: 3.2rem;
+          width: 65%;
           background-color: white;
           border-radius: 100%; }
         .cta--container .cta--media__links a {

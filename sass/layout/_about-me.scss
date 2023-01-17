@@ -82,10 +82,6 @@
             grid-template-rows: 1fr 1fr;
             justify-items: center;
             margin-top: 4rem;
-            .github {
-                background-color: $white;
-                border-radius: 100%;
-            }
             img {
                 @include media(tablet) {
                     width: 8rem;
