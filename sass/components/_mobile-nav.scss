@@ -107,7 +107,7 @@
     color: white;
     background-image: $gradient-transparent;
     background-size: 225%;
-    transition: all .2s;
+    transition: all .4s;
     @include media(tablet) {
         font-size: 5rem;
 	}

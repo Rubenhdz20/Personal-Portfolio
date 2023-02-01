@@ -110,7 +110,7 @@ body {
   color: white;
   background-image: linear-gradient(80deg, transparent 0%, transparent 50%, white 50%);
   background-size: 225%;
-  transition: all .2s; }
+  transition: all .4s; }
   @media (min-width: 576px) and (max-width: 850px) {
     .nav--link:link,
     .nav--link:visited {
@@ -202,7 +202,8 @@ body {
     padding: 1.2rem 1.6rem; }
     .header .header--brand-container p {
       font-size: 2rem;
-      transition: all .2s; }
+      transition: all .4s;
+      cursor: pointer; }
       .header .header--brand-container p:hover, .header .header--brand-container p:active {
         color: #005bc9;
         background-position: 100%;
@@ -417,7 +418,8 @@ body {
       opacity: 0;
       color: rgba(0, 0, 0, 0.943);
       backface-visibility: hidden;
-      transition: all .3s; }
+      transition: all .3s;
+      cursor: pointer; }
       .about-me--img .about-me--caption:hover {
         opacity: 1; }
   .about-me--description {
@@ -534,6 +536,7 @@ body {
     -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.13); }
     .projects--container .project--overview {
       width: 45%;
+      height: 90%;
       border-radius: 10%; }
       @media (min-width: 576px) and (max-width: 850px) {
         .projects--container .project--overview {
