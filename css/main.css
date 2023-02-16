@@ -73,7 +73,7 @@ body {
 .nav--list {
   position: absolute;
   top: 28%;
-  left: 28%;
+  left: 26.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,8 +167,8 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #334df940;
-  backdrop-filter: blur(30px);
+  background-color: #2b72ffe9;
+  backdrop-filter: blur(20px);
   text-align: center;
   transition: all .2s; }
   @media (min-width: 851px) and (max-width: 1200px) {
