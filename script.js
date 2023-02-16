@@ -70,7 +70,7 @@ function animateBars() {
   bar3.classList.toggle('activebars-menu-3');
   nav.classList.toggle('active-navigation-nav');
   nav.classList.toggle('nav');
-  background.classList.toggle('scale');
+  // background.classList.toggle('scale');
 }
 
 // links behaviour in the mobile menu 
