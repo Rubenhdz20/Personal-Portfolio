@@ -18,7 +18,6 @@
     <title>Ruben Hernandez</title>
 </head>
 <body>
-
     <div class="navigation">
         <div class="header--mobile-menu">
             <span class="mobile-bars1"></span>
@@ -30,13 +29,13 @@
     
         <nav id="nav" class="nav">
             <ul class="nav--list">
-                <li class="nav--item"><a href="#front-page" class="nav--link">Home</a></li>
+                <li class="nav--item"><a href="#front-page" class="nav--link" data-section="mobile-nav" data-value="first-item">Home</a></li>
 
-                <li class="nav--item"><a href="#about" class="nav--link">Myself</a></li>
+                <li class="nav--item"><a href="#about" class="nav--link" data-section="mobile-nav" data-value="second-item">Myself</a></li>
 
-                <li class="nav--item"><a href="#projects" class="nav--link">Projects</a></li>
+                <li class="nav--item"><a href="#projects" class="nav--link" data-section="mobile-nav" data-value="third-item">Projects</a></li>
 
-                <li class="nav--item"><a href="#cta" class="nav--link">Contact</a></li>
+                <li class="nav--item"><a href="#cta" class="nav--link" data-section="mobile-nav" data-value="fourth-item">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -45,10 +44,22 @@
         <section class="header--brand-container">
             <p>RUBDEV</p>
 
-            <div class="header--switch">
+            <!-- <div class="header--switch">
                 <span class="en"><span class="uk"><img class="english" src="/img/english.svg" alt="UK"></span></span>
+
                 <input type="checkbox" class="check">
+
                 <span class="es"><img class="spain" src="/img/spanish.svg" alt="Spain"></span>
+            </div> -->
+
+            <div id="flags" class="header--flags">
+                <div class="flags--item" data-language="en">
+                    <img src="/img/english.svg" alt="ES Flag">
+                </div>
+
+                <div class="flags--item" data-language="es">
+                    <img src="/img/spanish.svg" alt="GB Flag">
+                </div>
             </div>
 
             <button id="dark" aria-label="Aria Name" class="header--dark-mode">
@@ -58,10 +69,10 @@
 
             <nav class="nav2">
                 <ul class="nav--list">
-                    <li class="nav--item"><a href="#front-page" class="nav--link">Home</a></li>
-                    <li class="nav--item"><a href="#about" class="nav--link">Myself</a></li>
-                    <li class="nav--item"><a href="#projects" class="nav--link">Projects</a></li>
-                    <li class="nav---item nav--link__contact"><a href="#cta" class="nav--link">Contact</a></li>
+                    <li class="nav--item"><a href="#front-page" class="nav--link" data-section="desktop-header" data-value="first-item">Home</a></li>
+                    <li class="nav--item"><a href="#about" class="nav--link" data-section="desktop-header" data-value="second-item">Myself</a></li>
+                    <li class="nav--item"><a href="#projects" class="nav--link" data-section="desktop-header" data-value="third-item">Projects</a></li>
+                    <li class="nav---item nav--link__contact"><a href="#cta" class="nav--link" data-section="desktop-header" data-value="fourth-item">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -69,18 +80,18 @@
 
     <section id="front-page" class="home">
         <div class="home--titles" data-aos="fade-right">
-            <h1>Welcome!</h1>
-            <h2>I am Ruben</h2>
-            <p class="home--titles__position">Frontend Developer</p> 
+            <h1 data-section="home" data-value="greetings">Welcome!</h1>
+            <h2 data-section="home" data-value="myself">I am Ruben</h2>
+            <p class="home--titles__position" data-section="home" data-value="rol">Frontend Developer</p> 
         </div>
        
         <div class="home--btns" data-aos="fade-left">
-            <a href="/pdf/CV_Frontend_Ruben Hernandez_EN.pdf" download="CV_Frontend_Ruben Hernandez Alvarado"><button class="btn--download">Download CV</button></a> 
+            <a href="/pdf/CV_Frontend_Ruben Hernandez_EN.pdf" download="CV_Frontend_Ruben Hernandez Alvarado"><button class="btn--download" data-section="home" data-value="download">Download CV</button></a> 
         </div>
     </section>
 
     <section id="about" class="about-me">
-        <h2 class="about-me--title" data-aos="fade-down">Who am I?</h2>
+        <h2 class="about-me--title" data-aos="fade-down" data-section="aboutme" data-value="title">Who am I?</h2>
 
         <figure class="about-me--img">
             <img class="about-me--avatar" src="/img/ProfilePic.png" alt="Profile Picture" data-aos="fade-down">
@@ -88,43 +99,72 @@
         </figure>
 
         <div class="about-me--description" data-aos="fade-right">
-            <p>
+            <p data-section="aboutme" data-value="first-paragraph">
             Technology has changed our lives forever, who would ever imagine where we are right now?</p>
             <br>
-            <p>Thanks for being here my name is Ruben, I am a curious and optimism programmer with 1 year of experience in this world, I love creating for the web, from planning, designing and making it happen through code.</p>
+            <p data-section="aboutme" data-value="second-paragraph">Thanks for being here my name is Ruben, I am a curious and optimism programmer with 1 year of experience in this world, I love creating for the web, from planning, designing and making it happen through code.</p>
             <br>
-            <p> For me the most important thing in life is being a great human, through efficient and effective websites I can contribute and optimize people's lives which makes me feel I can share value to society.</p>
+            <p data-section="aboutme" data-value="third-paragraph"> For me the most important thing in life is being a great human, through efficient and effective websites I can contribute and optimize people's lives which makes me feel I can share value to society.</p>
         </div>
 
         <div class="about-me--tools">
-            <h3 data-aos="zoom-in-up">Technologies</h3>
+            <h3 data-aos="zoom-in-up" data-section="aboutme" data-value="technologies">Technologies</h3>
 
             <figure class="about-me--technologies"  data-aos="zoom-in-up">
-                <img src="/img/HTML.png" alt="Html">
-                <img src="/img/CSS.png" alt="Css">
-                <img src="/img/Sass.png" alt="Sass">
-                <img src="/img/Figma.png" alt="Figma">
-                <img src="/img/Git.png" alt="Git">
-                <img src="/img/Javascript.png" alt="Javascript">
-                <img class="json" src="/img/JSON.png" alt="JSON" width="25%">
-                <img class="react" src="/img/React.js.png" alt="ReactJs">
+                <div class="technologies-container">
+                    <img src="/img/HTML.png" alt="Html">
+                    <span class="technology-name">HTML</span>
+                </div>
+                
+                <div class="technologies-container">
+                    <img src="/img/CSS.png" alt="Css">
+                    <span class="technology-name">CSS</span>
+                </div>
+
+                <div class="technologies-container">
+                    <img src="/img/Sass.png" alt="Sass">
+                    <span class="technology-name">SASS</span>
+                </div>  
+                
+                <div class="technologies-container">
+                    <img src="/img/Figma.png" alt="Figma">
+                    <span class="technology-name">FIGMA</span>
+                </div>
+                
+                <div class="technologies-container">
+                    <img src="/img/Git.png" alt="Git">
+                    <span class="technology-name">GIT</span>
+                </div>
+            
+                <div class="technologies-container">
+                    <img src="/img/Javascript.png" alt="Javascript">
+                    <span class="technology-name">JAVASCRIPT</span>
+                </div>
+                
+                <div class="technologies-container">
+                    <img class="json" src="/img/JSON.png" alt="JSON" width="45%">
+                    <span class="technology-name">JSON</span>
+                </div>
+               
+                <div class="technologies-container">
+                    <img class="react" src="/img/React.js.png" alt="ReactJs">
+                    <span class="technology-name">REACT JS</span>
+                </div>
             </figure>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h3 data-aos="fade-down">Projects</h3>
+        <h3 data-aos="fade-down" data-section="projects" data-value="title">Projects</h3>
 
         <div class="projects--description" data-aos="fade-right">
-            <p>They say practice makes perfect, I could not agree more, by creating these projects I was able to understand, learn, fail, get up and try again.</p>
-            <br>
-            <p>Learning behind the scenes how every technology works made understand how powerful is programming, here are some projects created with love, by the time you are reading this I will be creating more!</p>
+            <p data-section="projects" data-value="description">Learning behind the scenes how every technology works made understand how powerful is programming, here are some projects created with love, by the time you are reading this I will be creating more!</p>
         </div>
 
         <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/VideoGame.png" alt="First Project">
 
-            <p class="project--name">Surf Video Game</p>
+            <p class="project--name" data-section="projects" data-value="first-project-name">Surf Video Game</p>
             
             <figure class="project--technologies">
                 <img src="/img/HTML.png" alt="Html">
@@ -133,20 +173,20 @@
                 <img src="/img/Git.png" alt="Git">
             </figure>
 
-            <p class="project--description">
+            <p class="project--description" data-section="projects" data-value="first-project-description">
                 VideoGame created with Canvas and JavaScript, the idea is moving the player through every wave to change the level until you can reach the end!
             </p>
 
             <div class="project--redirection">
-                <a id="light" class="project--redirection__live" href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
-                <a id="code1" class="project--redirection__code" href="https://github.com/Rubenhdz20/VideoGameJS" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+                <a id="light" class="project--redirection__live" href="https://surf-game.netlify.app" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="first-project-live">Live View</a></button>
+                <a id="code1" class="project--redirection__code" href="https://github.com/Rubenhdz20/VideoGameJS" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="first-project-code">Source Code</a></button>
             </div>
         </div>
 
         <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/Yardsale.png" alt="First Project">
             
-            <p class="project--name">Yardsale</p>
+            <p class="project--name" data-section="projects" data-value="second-project-name">Yardsale</p>
 
             <figure class="project--technologies">
                 <img src="/img/HTML.png" alt="Html">
@@ -155,20 +195,20 @@
                 <img src="/img/Git.png" alt="Git">
             </figure>
 
-            <p class="project--description">
+            <p class="project--description" data-section="projects" data-value="second-project-description">
                 Displaying products from the store, adding products to your cart, removing them, click in every product to get information and much more!, enjoy navigating in this online shop.
             </p>
 
             <div class="project--redirection">
-                <a id="light3" class="project--redirection__live" href="https://yard-sale-web.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
-                <a id="code3" class="project--redirection__code" href="https://github.com/Rubenhdz20/YardSale" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+                <a id="light3" class="project--redirection__live" href="https://yard-sale-web.netlify.app" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="second-project-live">Live View</a></button>
+                <a id="code3" class="project--redirection__code" href="https://github.com/Rubenhdz20/YardSale" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="second-project-code">Source Code</a></button>
             </div>
         </div>
 
         <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/Omnifood.png" alt="First Project">
 
-            <p class="project--name">Omnifood</p>
+            <p class="project--name" data-section="projects" data-value="third-project-name">Omnifood</p>
             
             <figure class="project--technologies">
                 <img src="/img/HTML.png" alt="Html">
@@ -177,20 +217,20 @@
                 <img src="/img/Git.png" alt="Git">
             </figure>
 
-            <p class="project--description">
+            <p class="project--description" data-section="projects" data-value="third-project-description">
                 Improved my layout skills with methodologies such as BEM, also to understand the responsive design that is widely used today with the mobile first approach, apply animations for a better flow and a cleaner navigation, enjoy this site designed to improve your diet with AI.
             </p>
 
             <div class="project--redirection">
-                <a id="light4" class="project--redirection__live" href="https://omnifood-aiweb.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
-                <a id="code4" class="project--redirection__code" href="https://github.com/Rubenhdz20/Omnifood-Project" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+                <a id="light4" class="project--redirection__live" href="https://omnifood-aiweb.netlify.app" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="third-project-live">Live View</a></button>
+                <a id="code4" class="project--redirection__code" href="https://github.com/Rubenhdz20/Omnifood-Project" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="third-project-code">Source Code</a></button>
             </div>
         </div>
 
         <div class="projects--container" data-aos="flip-up">
             <img class="project--overview" src="/img/Analysis.png" alt="First Project">
 
-            <p class="project--name">Salary Analysis</p>
+            <p class="project--name" data-section="projects" data-value="fourth-project-name">Salary Analysis</p>
             
             <figure class="project--technologies">
                 <img src="/img/HTML.png" alt="Html">
@@ -199,19 +239,19 @@
                 <img src="/img/Git.png" alt="Git">
             </figure>
 
-            <p class="project--description">
+            <p class="project--description" data-section="projects" data-value="fourth-project-description">
                 Being able to apply basic mathematics and statistics combined with Javascript has made me go beyond my logical thinking, determine the average, median and mode that later helped me to determine a salary projection per person.
             </p>
 
             <div class="project--redirection">
-                <a id="light2" class="project--redirection__live" href="https://salary-analisis.netlify.app" target="_blank" rel="noopener noreferrer">Live View</a></button>
-                <a id="code2"  class="project--redirection__code" href="https://github.com/Rubenhdz20/Salary-Analysis" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+                <a id="light2" class="project--redirection__live" href="https://salary-analisis.netlify.app" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="fourth-project-live">Live View</a></button>
+                <a id="code2"  class="project--redirection__code" href="https://github.com/Rubenhdz20/Salary-Analysis" target="_blank" rel="noopener noreferrer" data-section="projects" data-value="fourth-project-code">Source Code</a></button>
             </div>
         </div>
     </section>
 
     <section id="cta" class="cta">
-        <p class="cta--title">LET'S WORK TOGETHER!</p>
+        <p class="cta--title" data-section="cta" data-value="cta-title">LET'S WORK TOGETHER!</p>
 
         <div class="cta--container">
             <ul class="cta--media">
@@ -240,7 +280,7 @@
                     </div>
                 </li>
             </ul>
-            <p class="cta--credits">Designed & Built by Ruben ~ Made with ❤️ in 🇲🇽</p>
+            <p class="cta--credits" data-section="cta" data-value="cta-credits">Designed & Built by Ruben ~ Made with ❤️ in 🇲🇽</p>
         </div>
     </section>
 

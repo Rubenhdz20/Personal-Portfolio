@@ -1,0 +1,51 @@
+{
+    "mobile-nav": {
+        "first-item": "Inicio",
+        "second-item": "Sobre Mi",
+        "third-item": "Proyectos",
+        "fourth-item": "Contacto"
+    },
+    "desktop-header": {
+        "first-item": "Inicio",
+        "second-item": "Sobre Mi",
+        "third-item": "Proyectos",
+        "fourth-item": "Contacto"
+    },
+    "home": {
+        "greetings": "Bienvenido!",
+        "myself": "Soy Ruben",
+        "rol": "Desarrollador Frontend",
+        "download": "Descargar CV"
+    },
+    "aboutme": {
+        "title": "Quien soy?",
+        "first-paragraph": "La tecnología ha cambiado nuestras vidas para siempre, ¿Quién se imaginaría dónde estamos ahora?",
+        "second-paragraph": "Gracias por estar aquí, mi nombre es Ruben, soy un programador curioso y optimista con 1 año de experiencia dentro de este mundo, me encanta crear para la web, desde planificar, diseñar y hacerlo realidad a través del código.",
+        "third-paragraph": "Para mí, lo más importante en la vida es ser una gran persona, por lo que construyendo sitios web eficientes y efectivos puedo contribuir y optimizar la vida de las personas, lo que me hace sentir que puedo compartir valor con la sociedad.",
+        "technologies": "Tecnologías"  
+    },
+    "projects": {
+        "title": "Proyectos",
+        "description": "Aprender detrás cómo funciona cada tecnología me hizo comprender lo poderoso que es la programación, aquí hay algunos proyectos creados con amor, para cuando estés leyendo esto, ¡estaré creando más!",
+        "first-project-name": "VideoJuego de Surf",
+        "first-project-description": "VideoJuego creado con Canvas y JavaScript, la idea es mover al jugador a través de cada ola para cambiar de nivel hasta que pueda llegar al final!",
+        "first-project-live": "Vista en vivo",
+        "first-project-code": "Descubre el código",
+        "second-project-name": "Yardsale",
+        "second-project-description": " En Yardsale pude implementar diferentes interacciones como mostrar productos de la tienda, agregar productos a tu carrito, eliminarlos, hacer click en cada producto para obtener información ¡y mucho más!, disfruta navegando en este Tienda online.",
+        "second-project-live": "Vista en Vivo",
+        "second-project-code": "Descubre el código",
+        "third-project-name": "Omnifood",
+        "third-project-description": "Mejoré mis habilidades de maquetación con metodologías como BEM, entendí el diseño responsivo que hoy en día se usa mucho con el enfoque mobile first, apliqué animaciones para un mejor flujo y una navegación más limpia, disfruta de este sitio pensado para mejorar tu alimentación con AI. ",
+        "third-project-live": "Vista en Vivo",
+        "third-project-code": "Descubre el código",
+        "fourth-project-name": "Análisis de Salario",
+        "fourth-project-description": "Poder aplicar matemáticas y estadísticas básicas combinadas con Javascript me ha hecho ir más allá de mi pensamiento lógico, determinar el promedio, la mediana y la moda que luego me sirvieron para determinar una proyección salarial por persona.",
+        "fourth-project-live": "Vista en Vivo",
+        "fourth-project-code": "Descubre el código"
+    },
+    "cta": {
+        "cta-title": "TRABAJEMOS JUNTOS!",
+        "cta-credits": "Diseñado y construido por Ruben ~ Hecho con ❤️ en 🇲🇽"
+    }
+}

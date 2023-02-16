@@ -83,20 +83,28 @@
             grid-template-rows: 1fr 1fr;
             justify-items: center;
             margin-top: 4rem;
-            img {
-                @include media(tablet) {
-                    width: 8rem;
-                    height: 8rem;
+            .technologies-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    @include media(tablet) {
+                        width: 8rem;
+                        height: 8rem;
+                    }
+                    @include media(desktop-s) {
+                        width: 8rem;
+                        height: 8rem;
+                    }
+                    @include media(desktop) {
+                        width: 8rem;
+                        height: 8rem;
+                    }
                 }
-                @include media(desktop-s) {
-                    width: 8rem;
-                    height: 8rem;
-                    margin-right: 2rem;
-                }
-                @include media(desktop) {
-                    width: 8rem;
-                    height: 8rem;
-                    margin-right: 2rem;
+                .technology-name {
+                    font-size: 1.5rem;
+                    padding: .5rem;
                 }
             }
             @include media(desktop-s) {

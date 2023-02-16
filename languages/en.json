@@ -1,0 +1,51 @@
+{
+    "mobile-nav": {
+        "first-item": "Home",
+        "second-item": "About me",
+        "third-item": "Projects",
+        "fourth-item": "Contact"
+    },
+    "desktop-header": {
+        "first-item": "Home",
+        "second-item": "About me",
+        "third-item": "Projects",
+        "fourth-item": "Contact"
+    },
+    "home": {
+        "greetings": "Welcome!",
+        "myself": "I am Ruben",
+        "rol": "Frontend Developer",
+        "download": "Download CV"
+    },
+    "aboutme": {
+        "title": "Who I am?",
+        "first-paragraph": "Technology has changed our lives forever, who would ever imagine where we are right now?",
+        "second-paragraph": "Thanks for visiting my website, my name is Ruben, I am a curious and optimism programmer with 1 year of experience in this world, I love creating for the web, from planning, designing and making it happen through code.",
+        "third-paragraph": "For me the most important thing in life is being a great human, through building efficient and effective websites I can contribute and optimize people's lives which makes me feel I can share value to society.",
+        "technologies": "Technologies"  
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "Learning behind the scenes how every technology works made understand how powerful is programming, here are some projects created with love, by the time you are reading this I will be creating more!",
+        "first-project-name": "Surf Video Game",
+        "first-project-description": "VideoGame created with Canvas and JavaScript, the idea is moving the player through every wave to change the level until you can reach the end!",
+        "first-project-live": "Live View",
+        "first-project-code": "Source Code",
+        "second-project-name": "Yardsale",
+        "second-project-description": "Displaying products from the store, adding products to your cart, removing them, click in every product to get information and much more!, enjoy navigating in this online shop.",
+        "second-project-live": "Live View",
+        "second-project-code": "Source Code",
+        "third-project-name": "Omnifood",
+        "third-project-description": "Improved my layout skills with methodologies such as BEM, also to understand the responsive design that is widely used today with the mobile first approach, apply animations for a better flow and a cleaner navigation, enjoy this site designed to improve your diet with AI.",
+        "third-project-live": "Live View",
+        "third-project-code": "Source Code",
+        "fourth-project-name": "Salary Analysis",
+        "fourth-project-description": "Being able to apply basic mathematics and statistics combined with Javascript has made me go beyond my logical thinking, determine the average, median and mode that later helped me to determine a salary projection per person.",
+        "fourth-project-live": "Live View",
+        "fourth-project-code": "Source Code"
+    },
+    "cta": {
+        "cta-title": "LET'S WORK TOGETHER!",
+        "cta-credits": "Designed and built by Ruben ~ Made with ❤️ in 🇲🇽"
+    }
+}
