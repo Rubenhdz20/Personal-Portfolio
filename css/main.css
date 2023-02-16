@@ -167,8 +167,7 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #000e2fe9;
-  backdrop-filter: blur(20px);
+  background-color: #011c60;
   text-align: center; }
   @media (min-width: 851px) and (max-width: 1200px) {
     .active-navigation-nav {
