@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass":"node-sass sass/main.scss css/main.css --watch"
+    "compile-sass": "node-sass sass/main.scss css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Rubenhdz20/Personal-Portfolio#readme",
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^9.0.0"
   }
 }

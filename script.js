@@ -22,21 +22,17 @@ const changeLanguage = async (language) => {
     // console.log(textsToChange);
     const section = textToChange.dataset.section;
     const value = textToChange.dataset.value;
-
     textToChange.innerHTML = texts[section][value];
   }
-
   console.log(texts);
 }
 
 flagsElement.addEventListener("click", (e) => {
   changeLanguage(e.target.parentElement.dataset.language);
-
 })
 
 /* DARK MODE ELEMENTS */
 let btnDark = document.querySelector("#dark");
-
 let aboutMe = document.querySelector('.about-me');
 let projects = document.querySelector('.projects');
 let cta = document.querySelector('.cta');
@@ -116,6 +112,5 @@ function changeBackground() {
   media3.classList.toggle("light");
   media4.classList.toggle("light");
   cta.classList.toggle("light");
-
   nav2.classList.toggle("light");
 }

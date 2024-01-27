@@ -1,4 +1,3 @@
-
 .about-me {
     padding: 2.9rem 1.6rem 1.6rem;
     background-color: $dark;
@@ -19,14 +18,6 @@
         position: relative;
         display: flex;
         justify-content: center;
-        .about-me--avatar {
-            transform: scale(1.2);
-            transition: all .5s;
-            &:hover {
-                transform: scale(.9);
-                filter: blur(3px) brightness(80%);
-            }
-        }
         .about-me--caption {
             position: absolute;
             top: 40%;
@@ -47,24 +38,16 @@
         }
     }
     &--description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 2rem;
         & p {
             max-width: 75ch;
             font-size: 2rem;
             text-align: center;
             line-height: 1.5;
-        }
-        @include media(desktop-s) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        @include media(desktop) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
     } 
     &--tools {
@@ -78,11 +61,11 @@
             }
         }  
         .about-me--technologies {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 4rem;
+            overflow-x: hidden;
             .technologies-container {
                 display: flex;
                 flex-direction: column;
